@@ -30,27 +30,11 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link VardAdresseringsType }
+     * Create an instance of {@link FkKontaktType }
      * 
      */
-    public VardAdresseringsType createVardAdresseringsType() {
-        return new VardAdresseringsType();
-    }
-
-    /**
-     * Create an instance of {@link LakarutlatandeEnkelType }
-     * 
-     */
-    public LakarutlatandeEnkelType createLakarutlatandeEnkelType() {
-        return new LakarutlatandeEnkelType();
-    }
-
-    /**
-     * Create an instance of {@link InnehallType }
-     * 
-     */
-    public InnehallType createInnehallType() {
-        return new InnehallType();
+    public FkKontaktType createFkKontaktType() {
+        return new FkKontaktType();
     }
 
     /**
@@ -62,11 +46,27 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link FkKontaktType }
+     * Create an instance of {@link LakarutlatandeEnkelType }
      * 
      */
-    public FkKontaktType createFkKontaktType() {
-        return new FkKontaktType();
+    public LakarutlatandeEnkelType createLakarutlatandeEnkelType() {
+        return new LakarutlatandeEnkelType();
+    }
+
+    /**
+     * Create an instance of {@link VardAdresseringsType }
+     * 
+     */
+    public VardAdresseringsType createVardAdresseringsType() {
+        return new VardAdresseringsType();
+    }
+
+    /**
+     * Create an instance of {@link InnehallType }
+     * 
+     */
+    public InnehallType createInnehallType() {
+        return new InnehallType();
     }
 
 }

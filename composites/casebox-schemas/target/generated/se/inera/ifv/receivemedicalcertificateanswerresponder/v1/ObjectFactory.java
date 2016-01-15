@@ -44,19 +44,19 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link AnswerFromFkType }
-     * 
-     */
-    public AnswerFromFkType createAnswerFromFkType() {
-        return new AnswerFromFkType();
-    }
-
-    /**
      * Create an instance of {@link ReceiveMedicalCertificateAnswerType }
      * 
      */
     public ReceiveMedicalCertificateAnswerType createReceiveMedicalCertificateAnswerType() {
         return new ReceiveMedicalCertificateAnswerType();
+    }
+
+    /**
+     * Create an instance of {@link AnswerFromFkType }
+     * 
+     */
+    public AnswerFromFkType createAnswerFromFkType() {
+        return new AnswerFromFkType();
     }
 
     /**

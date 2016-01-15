@@ -47,6 +47,46 @@ public class ObjectFactory {
     }
 
     /**
+     * Create an instance of {@link MetadataType }
+     * 
+     */
+    public MetadataType createMetadataType() {
+        return new MetadataType();
+    }
+
+    /**
+     * Create an instance of {@link EndpointReferenceType }
+     * 
+     */
+    public EndpointReferenceType createEndpointReferenceType() {
+        return new EndpointReferenceType();
+    }
+
+    /**
+     * Create an instance of {@link RelatesToType }
+     * 
+     */
+    public RelatesToType createRelatesToType() {
+        return new RelatesToType();
+    }
+
+    /**
+     * Create an instance of {@link ProblemActionType }
+     * 
+     */
+    public ProblemActionType createProblemActionType() {
+        return new ProblemActionType();
+    }
+
+    /**
+     * Create an instance of {@link AttributedAnyType }
+     * 
+     */
+    public AttributedAnyType createAttributedAnyType() {
+        return new AttributedAnyType();
+    }
+
+    /**
      * Create an instance of {@link ReferenceParametersType }
      * 
      */
@@ -76,46 +116,6 @@ public class ObjectFactory {
      */
     public AttributedURIType createAttributedURIType() {
         return new AttributedURIType();
-    }
-
-    /**
-     * Create an instance of {@link MetadataType }
-     * 
-     */
-    public MetadataType createMetadataType() {
-        return new MetadataType();
-    }
-
-    /**
-     * Create an instance of {@link EndpointReferenceType }
-     * 
-     */
-    public EndpointReferenceType createEndpointReferenceType() {
-        return new EndpointReferenceType();
-    }
-
-    /**
-     * Create an instance of {@link ProblemActionType }
-     * 
-     */
-    public ProblemActionType createProblemActionType() {
-        return new ProblemActionType();
-    }
-
-    /**
-     * Create an instance of {@link RelatesToType }
-     * 
-     */
-    public RelatesToType createRelatesToType() {
-        return new RelatesToType();
-    }
-
-    /**
-     * Create an instance of {@link AttributedAnyType }
-     * 
-     */
-    public AttributedAnyType createAttributedAnyType() {
-        return new AttributedAnyType();
     }
 
     /**

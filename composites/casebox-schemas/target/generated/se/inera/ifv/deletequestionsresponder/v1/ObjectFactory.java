@@ -35,19 +35,19 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link DeleteQuestionsResponseType }
-     * 
-     */
-    public DeleteQuestionsResponseType createDeleteQuestionsResponseType() {
-        return new DeleteQuestionsResponseType();
-    }
-
-    /**
      * Create an instance of {@link DeleteQuestionsType }
      * 
      */
     public DeleteQuestionsType createDeleteQuestionsType() {
         return new DeleteQuestionsType();
+    }
+
+    /**
+     * Create an instance of {@link DeleteQuestionsResponseType }
+     * 
+     */
+    public DeleteQuestionsResponseType createDeleteQuestionsResponseType() {
+        return new DeleteQuestionsResponseType();
     }
 
     /**

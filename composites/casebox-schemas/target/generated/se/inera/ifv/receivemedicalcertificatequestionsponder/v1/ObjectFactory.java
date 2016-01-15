@@ -36,11 +36,11 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link QuestionFromFkType }
+     * Create an instance of {@link ReceiveMedicalCertificateQuestionResponseType }
      * 
      */
-    public QuestionFromFkType createQuestionFromFkType() {
-        return new QuestionFromFkType();
+    public ReceiveMedicalCertificateQuestionResponseType createReceiveMedicalCertificateQuestionResponseType() {
+        return new ReceiveMedicalCertificateQuestionResponseType();
     }
 
     /**
@@ -52,11 +52,11 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link ReceiveMedicalCertificateQuestionResponseType }
+     * Create an instance of {@link QuestionFromFkType }
      * 
      */
-    public ReceiveMedicalCertificateQuestionResponseType createReceiveMedicalCertificateQuestionResponseType() {
-        return new ReceiveMedicalCertificateQuestionResponseType();
+    public QuestionFromFkType createQuestionFromFkType() {
+        return new QuestionFromFkType();
     }
 
     /**

@@ -26,6 +26,7 @@
 		<groupId>se.inera.ifv</groupId>
 		<artifactId>casebox-parent</artifactId>
 		<version>1.1-SNAPSHOT</version>
+		<relativePath>..\..\</relativePath>
 	</parent>
 
 	<groupId>se.inera.ifv</groupId>
@@ -53,6 +54,7 @@
 						</systemProperty>
 					</systemProperties>
 				</configuration>
+				<version>6.1.26</version>
 			</plugin>
 			<plugin>
 				<artifactId>maven-surefire-plugin</artifactId>
@@ -61,6 +63,7 @@
 						<exclude>**/inttest/**</exclude>
 					</excludes>
 				</configuration>
+				<version>2.6</version>
 			</plugin>
 			<plugin>
 				<groupId>org.codehaus.mojo</groupId>
@@ -230,6 +233,7 @@
 								</configuration>
 							</execution>
 						</executions>
+						<version>2.6</version>
 					</plugin>
 					<plugin>
 						<groupId>org.mortbay.jetty</groupId>

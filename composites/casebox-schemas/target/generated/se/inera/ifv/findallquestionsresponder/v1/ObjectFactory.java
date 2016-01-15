@@ -35,14 +35,6 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link FindAllQuestionsResponseType }
-     * 
-     */
-    public FindAllQuestionsResponseType createFindAllQuestionsResponseType() {
-        return new FindAllQuestionsResponseType();
-    }
-
-    /**
      * Create an instance of {@link QuestionType }
      * 
      */
@@ -51,19 +43,27 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link FindAllQuestionsType }
-     * 
-     */
-    public FindAllQuestionsType createFindAllQuestionsType() {
-        return new FindAllQuestionsType();
-    }
-
-    /**
      * Create an instance of {@link QuestionsType }
      * 
      */
     public QuestionsType createQuestionsType() {
         return new QuestionsType();
+    }
+
+    /**
+     * Create an instance of {@link FindAllQuestionsResponseType }
+     * 
+     */
+    public FindAllQuestionsResponseType createFindAllQuestionsResponseType() {
+        return new FindAllQuestionsResponseType();
+    }
+
+    /**
+     * Create an instance of {@link FindAllQuestionsType }
+     * 
+     */
+    public FindAllQuestionsType createFindAllQuestionsType() {
+        return new FindAllQuestionsType();
     }
 
     /**

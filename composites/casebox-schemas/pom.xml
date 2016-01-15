@@ -26,6 +26,7 @@
 		<groupId>se.inera.ifv</groupId>
 		<artifactId>casebox-parent</artifactId>
 		<version>1.1-SNAPSHOT</version>
+		<relativePath>..\..\</relativePath>
 	</parent>
 
 	<groupId>se.inera.ifv</groupId>
@@ -270,9 +271,10 @@
 			<plugin>
 				<artifactId>maven-compiler-plugin</artifactId>
 				<configuration>
-					<source>1.5</source>
-					<target>1.5</target>
+					<source>1.7</source>
+					<target>1.7</target>
 				</configuration>
+				<version>3.3</version>
 			</plugin>
 		</plugins>
 	</build>

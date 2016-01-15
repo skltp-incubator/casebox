@@ -46,11 +46,11 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link VardgivareType }
+     * Create an instance of {@link PatientType }
      * 
      */
-    public VardgivareType createVardgivareType() {
-        return new VardgivareType();
+    public PatientType createPatientType() {
+        return new PatientType();
     }
 
     /**
@@ -62,11 +62,11 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link PatientType }
+     * Create an instance of {@link VardgivareType }
      * 
      */
-    public PatientType createPatientType() {
-        return new PatientType();
+    public VardgivareType createVardgivareType() {
+        return new VardgivareType();
     }
 
 }
