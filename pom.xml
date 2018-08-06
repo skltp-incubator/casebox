@@ -25,10 +25,47 @@
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<cxf.version>2.3.0</cxf.version>
+		<commons-collection.version>3.2.1</commons-collection.version>
 	</properties>
+
+	<scm>
+		<url>https://github.com/skltp-incubator/casebox.git</url>
+		<connection>scm:git:git://github.com/skltp-incubator/casebox.git</connection>
+		<developerConnection>scm:git:git://github.com/skltp-incubator/casebox.git</developerConnection>
+		<tag>HEAD</tag>
+	</scm>
+
+	<modules>
+		<module>composites/casebox-schemas</module>
+		<module>composites/casebox-ws</module>
+		<module>composites/casebox-core</module>
+		<module>composites/casebox-web</module>
+		<module>composites/casebox-ws-test-consumer</module>
+		<module>modules/web</module>
+	</modules>
+
+	<distributionManagement>
+		<repository>
+			<id>release-nexus</id>
+			<name>Release Nexus</name>
+			<url>${releases-nexus-url}</url>
+		</repository>
+		<snapshotRepository>
+			<id>snapshot-nexus</id>
+			<name>Snapshot Nexus</name>
+			<url>${snapshot-nexus-url}</url>
+		</snapshotRepository>
+	</distributionManagement>
+
 
 	<dependencyManagement>
 		<dependencies>
+			<!-- Override commons-collections version 3.2.1 -->
+			<dependency>
+				<groupId>commons-collections</groupId>
+				<artifactId>commons-collections</artifactId>
+				<version>${commons-collection.version}</version>
+			</dependency>
 			<dependency>
 				<groupId>org.apache.cxf</groupId>
 				<artifactId>cxf-rt-frontend-jaxws</artifactId>
@@ -360,19 +397,4 @@ encoding/<project>=UTF-8]]>
 			</plugin>
 		</plugins>
 	</build>
-
-	<scm>
-		<connection>scm:svn:https://inera-casebox.googlecode.com/svn/trunk</connection>
-		<developerConnection>scm:svn:https://inera-casebox.googlecode.com/svn/trunk</developerConnection>
-		<url>https://inera-casebox.googlecode.com/svn/tags</url>
-	</scm>
-
-	<modules>
-		<module>composites/casebox-schemas</module>
-		<module>composites/casebox-ws</module>
-		<module>composites/casebox-core</module>
-		<module>composites/casebox-web</module>
-		<module>composites/casebox-ws-test-consumer</module>
-		<module>modules/web</module>
-	</modules>
 </project>
