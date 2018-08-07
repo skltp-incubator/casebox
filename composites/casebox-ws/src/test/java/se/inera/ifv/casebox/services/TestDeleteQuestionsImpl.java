@@ -39,7 +39,6 @@ import se.inera.ifv.casebox.core.service.QuestionService;
 import se.inera.ifv.deletequestionsresponder.v1.DeleteQuestionsType;
 
 /**
- * @author Pär Wenåker
  *
  */
 public class TestDeleteQuestionsImpl {

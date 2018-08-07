@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="UTF-8"?>
 	<!--
 		* Copyright 2009 Inera * * This library is free
 		software; you can redistribute it and/or modify * it under the terms
@@ -312,14 +312,7 @@
 		</dependencies>
 	</dependencyManagement>
 
-	<repositories>
-		<repository>
-			<id>jboss</id>
-			<url>https://repository.jboss.org/nexus/content/groups/public/</url>
-		</repository>
-	</repositories>
-
-<!--  
+<!--
 	<pluginRepositories>
 		<pluginRepository>
 			<id>jrebel</id>

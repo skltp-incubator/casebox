@@ -26,7 +26,6 @@ import java.util.List;
 import se.inera.ifv.casebox.core.entity.Answer;
 
 /**
- * @author Pär Wenåker
  *
  */
 public class AnswersValue {
