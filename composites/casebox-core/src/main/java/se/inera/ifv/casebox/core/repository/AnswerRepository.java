@@ -36,4 +36,7 @@ public interface AnswerRepository extends Repository<Answer, Long> {
 
     int delete(String careUnit, Set<Long> ids);
 
+    List<Answer> findAllAnswersInIds(Set<Long> ids);
+
+
 }

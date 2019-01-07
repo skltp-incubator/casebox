@@ -30,13 +30,19 @@ import se.inera.ifv.findallanswersresponder.v1.FindAllAnswersResponseType;
 import se.inera.ifv.util.AnswersClient;
 import se.inera.ifv.util.DbunitTestBase;
 
+import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
+
 
 /**
  * @author Pär Wenåker
  *
  */
 public class MedicalCertificateAnswerFlowTest extends DbunitTestBase {
-    
+
+    @PersistenceContext
+    EntityManager entityManager;
+
     private AnswersClient client = new AnswersClient();
     
     @Test
@@ -48,8 +54,9 @@ public class MedicalCertificateAnswerFlowTest extends DbunitTestBase {
         for(int i = 0; i < 26 ; i++) {
             client.receive(logicalAddress);
         }
-        
-        assertEquals(26, simpleJdbcTemplate.queryForInt("SELECT COUNT(*) FROM ANSWER"));
+
+
+        assertEquals(new Integer(26), (Integer)entityManager.createNativeQuery("SELECT COUNT(*) FROM ANSWER").getSingleResult());
         
         FindAllAnswersResponseType resp = client.findAllAnswers(logicalAddress);
         
@@ -58,7 +65,7 @@ public class MedicalCertificateAnswerFlowTest extends DbunitTestBase {
 
         client.deleteQuestions(logicalAddress, resp.getAnswers().getAnswer());
 
-        assertEquals(16, simpleJdbcTemplate.queryForInt("SELECT COUNT(*) FROM ANSWER"));
+        assertEquals(new Integer(16), (Integer)entityManager.createNativeQuery("SELECT COUNT(*) FROM ANSWER").getSingleResult());
        
         resp = client.findAllAnswers(logicalAddress);
         
@@ -67,7 +74,7 @@ public class MedicalCertificateAnswerFlowTest extends DbunitTestBase {
 
         client.deleteQuestions(logicalAddress, resp.getAnswers().getAnswer());
 
-        assertEquals(6, simpleJdbcTemplate.queryForInt("SELECT COUNT(*) FROM ANSWER"));
+        assertEquals(new Integer(6), (Integer)entityManager.createNativeQuery("SELECT COUNT(*) FROM ANSWER").getSingleResult());
 
         resp = client.findAllAnswers(logicalAddress);
         
@@ -76,7 +83,7 @@ public class MedicalCertificateAnswerFlowTest extends DbunitTestBase {
 
         client.deleteQuestions(logicalAddress, resp.getAnswers().getAnswer());
         
-        assertEquals(0, simpleJdbcTemplate.queryForInt("SELECT COUNT(*) FROM ANSWER"));
+        assertEquals(new Integer(0), (Integer)entityManager.createNativeQuery("SELECT COUNT(*) FROM ANSWER").getSingleResult());
     }
 
     

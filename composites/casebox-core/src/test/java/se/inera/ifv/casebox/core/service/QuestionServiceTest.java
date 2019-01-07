@@ -28,7 +28,7 @@ import java.util.Set;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 
-import junit.framework.Assert;
+import org.junit.Assert;
 
 import org.dbunit.dataset.ITable;
 import org.junit.Test;
@@ -84,14 +84,16 @@ public class QuestionServiceTest extends JpaRepositoryTestBase {
         entityManager.flush();
         entityManager.clear();
 
-        assertEquals(0, simpleJdbcTemplate.queryForInt("SELECT COUNT(*) FROM QUESTION WHERE STATUS='RETRIEVED'"));
+        Integer length = (Integer) entityManager.createNativeQuery("SELECT COUNT(*) FROM QUESTION WHERE STATUS='RETRIEVED'").getSingleResult();
+        assertEquals(0, length.longValue());
 
         assertEquals(4, questionService.getQuestionsForCareUnit("careUnit1").getQuestions().size());
 
         entityManager.flush();
         entityManager.clear();
 
-        assertEquals(4, simpleJdbcTemplate.queryForInt("SELECT COUNT(*) FROM QUESTION WHERE STATUS='RETRIEVED'"));
+        length = (Integer) entityManager.createNativeQuery("SELECT COUNT(*) FROM QUESTION WHERE STATUS='RETRIEVED'").getSingleResult();
+        assertEquals(4, length.longValue());
     }
 
     @Test
@@ -114,14 +116,16 @@ public class QuestionServiceTest extends JpaRepositoryTestBase {
         entityManager.flush();
         entityManager.clear();
 
-        assertEquals(5, simpleJdbcTemplate.queryForInt("SELECT COUNT(*) FROM QUESTION"));
+        Integer length = (Integer) entityManager.createNativeQuery("SELECT COUNT(*) FROM QUESTION").getSingleResult();
+        assertEquals(5, length.longValue());
 
         questionService.deleteQuestionsForCareUnit("careUnit1", ids);
 
         entityManager.flush();
         entityManager.clear();
 
-        assertEquals(1, simpleJdbcTemplate.queryForInt("SELECT COUNT(*) FROM QUESTION"));
+        length = (Integer) entityManager.createNativeQuery("SELECT COUNT(*) FROM QUESTION").getSingleResult();
+        assertEquals(1, length.longValue());
 
         ITable result = getConnection().createQueryTable("STATISTIC",
                 "SELECT * FROM STATISTIC WHERE CARE_UNIT = 'careUnit1'");

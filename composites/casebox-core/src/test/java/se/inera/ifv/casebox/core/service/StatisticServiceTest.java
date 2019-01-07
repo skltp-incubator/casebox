@@ -26,8 +26,7 @@ import java.util.Iterator;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 
-import junit.framework.Assert;
-
+import org.junit.Assert;
 import org.dbunit.operation.DatabaseOperation;
 import org.junit.Ignore;
 import org.junit.Test;

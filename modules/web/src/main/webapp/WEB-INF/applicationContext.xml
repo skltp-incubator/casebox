@@ -71,5 +71,9 @@
 			</map>
 		</property>
 -->
-	</bean>	
+	</bean>
+	<bean name="csrfSecurityRequestMatcher" class="se.inera.ifv.CsrfSecurityRequestMatcher">
+
+	</bean>
+
 </beans>

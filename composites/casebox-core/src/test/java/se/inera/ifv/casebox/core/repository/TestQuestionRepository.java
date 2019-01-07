@@ -30,6 +30,7 @@ import javax.persistence.PersistenceContext;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
@@ -54,7 +55,9 @@ public class TestQuestionRepository extends JpaRepositoryTestBase {
         entityManager.flush();
         entityManager.clear();
 
-        assertEquals(1, simpleJdbcTemplate.queryForInt("SELECT COUNT(*) FROM QUESTION"));
+
+        Integer length = (Integer) entityManager.createNativeQuery("SELECT COUNT(*) FROM QUESTION").getSingleResult();
+        assertEquals(1, length.longValue());
     }
 
     @Test
@@ -117,6 +120,7 @@ public class TestQuestionRepository extends JpaRepositoryTestBase {
 
         entityManager.flush();
 
-        assertEquals(0, simpleJdbcTemplate.queryForInt("SELECT COUNT(*) FROM QUESTION"));
+        Integer length = (Integer) entityManager.createNativeQuery("SELECT COUNT(*) FROM QUESTION").getSingleResult();
+        assertEquals(0, length.longValue());
     }
 }

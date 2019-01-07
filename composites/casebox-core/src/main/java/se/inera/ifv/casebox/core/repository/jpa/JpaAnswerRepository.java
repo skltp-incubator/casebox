@@ -25,6 +25,7 @@ import java.util.List;
 import java.util.Set;
 
 import javax.persistence.NoResultException;
+import javax.persistence.TypedQuery;
 
 import org.springframework.stereotype.Repository;
 
@@ -36,42 +37,57 @@ import se.vgregion.dao.domain.patterns.repository.db.jpa.DefaultJpaRepository;
 @Repository
 public class JpaAnswerRepository extends DefaultJpaRepository<Answer> implements AnswerRepository {
 
-    @SuppressWarnings("unchecked")
-    public List<Answer> findAllForCareUnit(String careUnit) {
-        try {
-            return entityManager.createNamedQuery("Answer.findAllForCareUnit")
-                        .setParameter("careUnit", careUnit)
-                        .getResultList();
-        } catch(NoResultException e) {
-            return Collections.EMPTY_LIST;
-        }
+  @SuppressWarnings("unchecked")
+  public List<Answer> findAllForCareUnit(String careUnit) {
+    try {
+      return entityManager
+          .createNamedQuery("Answer.findAllForCareUnit")
+          .setParameter("careUnit", careUnit)
+          .getResultList();
+    } catch (NoResultException e) {
+      return Collections.EMPTY_LIST;
     }
 
-    @SuppressWarnings("unchecked")
-    public List<Answer> findForCareUnit(String careUnit, int maxResults) {
-        try {
-            return entityManager.createNamedQuery("Answer.findAllForCareUnit")
-                        .setParameter("careUnit", careUnit)
-                        .setFirstResult(0)
-                        .setMaxResults(maxResults)
-                        .getResultList();
-        } catch(NoResultException e) {
-            return Collections.EMPTY_LIST;
-        }
-    }
+  }
 
-    public Long getNumOfQuestionsForCareUnit(String careUnit) {
-        return (Long) entityManager.createNamedQuery("Answer.totalCountForCareUnit")
-                        .setParameter("careUnit", careUnit)
-                        .getSingleResult();
+  @SuppressWarnings("unchecked")
+  public List<Answer> findForCareUnit(String careUnit, int maxResults) {
+    try {
+      return entityManager
+          .createNamedQuery("Answer.findAllForCareUnit")
+          .setParameter("careUnit", careUnit)
+          .setFirstResult(0)
+          .setMaxResults(maxResults)
+          .getResultList();
+    } catch (NoResultException e) {
+      return Collections.EMPTY_LIST;
     }
-    
-    public int delete(String careUnit, Set<Long> ids) {
-        return entityManager.createNamedQuery("Answer.deleteForCareUnitWithIds")
-                    .setParameter("careUnit", careUnit)
-                    .setParameter("ids", ids)
-                    .setParameter("status", MessageStatus.RETRIEVED)
-                    .executeUpdate();
-    }
+  }
 
+  public Long getNumOfQuestionsForCareUnit(String careUnit) {
+    return (Long)
+        entityManager
+            .createNamedQuery("Answer.totalCountForCareUnit")
+            .setParameter("careUnit", careUnit)
+            .getSingleResult();
+  }
+
+  public int delete(String careUnit, Set<Long> ids) {
+
+    return entityManager
+        .createNamedQuery("Answer.deleteForCareUnitWithIds")
+        .setParameter("careUnit", careUnit)
+        .setParameter("ids", ids)
+        .setParameter("status", MessageStatus.RETRIEVED)
+        .executeUpdate();
+  }
+
+  public List<Answer> findAllAnswersInIds(Set<Long> ids) {
+
+    TypedQuery<Answer> query =
+        entityManager
+            .createNamedQuery("Answer.findAllInIds", Answer.class)
+            .setParameter("ids", ids);
+    return query.getResultList();
+  }
 }

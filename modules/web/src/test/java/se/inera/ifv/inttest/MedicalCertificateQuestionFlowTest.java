@@ -23,6 +23,8 @@ package se.inera.ifv.inttest;
 
 import static org.junit.Assert.*;
 
+import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
 import org.junit.Test;
 import org.w3.wsaddressing10.AttributedURIType;
 
@@ -36,7 +38,11 @@ import se.inera.ifv.util.QuestionsClient;
  *
  */
 public class MedicalCertificateQuestionFlowTest extends DbunitTestBase {
-    
+
+    @PersistenceContext
+    EntityManager entityManager;
+
+
     QuestionsClient client = new QuestionsClient();
 
     @Test
@@ -48,8 +54,9 @@ public class MedicalCertificateQuestionFlowTest extends DbunitTestBase {
         for(int i = 0; i < 26 ; i++) {
             client.receive(logicalAddress);
         }
-        
-        assertEquals(26, simpleJdbcTemplate.queryForInt("SELECT COUNT(*) FROM QUESTION"));
+
+        Integer length = (Integer) entityManager.createNativeQuery("SELECT COUNT(*) FROM QUESTION").getSingleResult();
+        assertEquals(26, length.intValue());
         
         FindAllQuestionsResponseType resp = client.findAllQuestions(logicalAddress);
         
@@ -58,7 +65,8 @@ public class MedicalCertificateQuestionFlowTest extends DbunitTestBase {
 
         client.deleteQuestions(logicalAddress, resp.getQuestions().getQuestion());
 
-        assertEquals(16, simpleJdbcTemplate.queryForInt("SELECT COUNT(*) FROM QUESTION"));
+        length = (Integer) entityManager.createNativeQuery("SELECT COUNT(*) FROM QUESTION").getSingleResult();
+        assertEquals(16, length.intValue());
        
         resp = client.findAllQuestions(logicalAddress);
         
@@ -67,7 +75,8 @@ public class MedicalCertificateQuestionFlowTest extends DbunitTestBase {
 
         client.deleteQuestions(logicalAddress, resp.getQuestions().getQuestion());
 
-        assertEquals(6, simpleJdbcTemplate.queryForInt("SELECT COUNT(*) FROM QUESTION"));
+        length = (Integer) entityManager.createNativeQuery("SELECT COUNT(*) FROM QUESTION").getSingleResult();
+        assertEquals(6, length.intValue());
 
         resp = client.findAllQuestions(logicalAddress);
         
@@ -75,8 +84,9 @@ public class MedicalCertificateQuestionFlowTest extends DbunitTestBase {
         assertEquals(0, resp.getQuestionsLeft());
 
         client.deleteQuestions(logicalAddress, resp.getQuestions().getQuestion());
-        
-        assertEquals(0, simpleJdbcTemplate.queryForInt("SELECT COUNT(*) FROM QUESTION"));
+
+        length = (Integer) entityManager.createNativeQuery("SELECT COUNT(*) FROM QUESTION").getSingleResult();
+        assertEquals(0, length.intValue());
     }
 
 }

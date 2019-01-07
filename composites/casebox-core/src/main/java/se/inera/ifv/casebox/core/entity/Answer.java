@@ -45,7 +45,10 @@ import se.vgregion.dao.domain.patterns.entity.AbstractEntity;
         @NamedQuery(name = "Answer.totalCountForCareUnit",
                     query = "select count(*) from Answer a where a.careUnit = :careUnit"),     
         @NamedQuery(name = "Answer.deleteForCareUnitWithIds", 
-                    query = "delete from Answer a where a.careUnit = :careUnit and a.id in (:ids) and a.status = :status")                    
+                    query = "delete from Answer a where a.careUnit = :careUnit and a.id in (:ids) and a.status = :status"),
+        @NamedQuery(name = "Answer.findAllInIds",
+                query = "select a from Answer a where a.id in (:ids)")
+
 })
 @Entity
 @Table(name="ANSWER")

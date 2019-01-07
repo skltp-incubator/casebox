@@ -44,6 +44,7 @@ import se.inera.ifv.v2.ResultOfCall;
             portName = "FindAllAnswersResponderPort", 
             targetNamespace = "urn:riv:insuranceprocess:healthreporting:FindAllAnswers:1:rivtabp20", 
             wsdlLocation = "schemas/interactions/FindAllAnswersInteraction/FindAllAnswersInteraction_1.0_rivtabp20.wsdl")
+
 public class FindAllAnswersImpl implements FindAllAnswersResponderInterface {
 
 	private static final Logger log = LoggerFactory.getLogger(FindAllAnswersImpl.class);
@@ -55,6 +56,7 @@ public class FindAllAnswersImpl implements FindAllAnswersResponderInterface {
         this.answerService = questionService;
     }
 
+    @Override
     public FindAllAnswersResponseType findAllAnswers(AttributedURIType address, FindAllAnswersType parameters) {
         FindAllAnswersResponseType response = new FindAllAnswersResponseType();
         try {

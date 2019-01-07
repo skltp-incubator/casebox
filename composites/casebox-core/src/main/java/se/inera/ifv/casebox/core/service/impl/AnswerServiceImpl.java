@@ -34,50 +34,53 @@ import se.inera.ifv.casebox.core.repository.AnswerRepository;
 import se.inera.ifv.casebox.core.service.AnswerService;
 import se.inera.ifv.casebox.core.service.AnswersValue;
 import se.inera.ifv.casebox.core.service.StatisticService;
+import se.inera.ifv.casebox.core.service.impl.validation.DeleteAnswerValidation;
 
 @Service
 @Transactional(rollbackFor = IllegalStateException.class)
 public class AnswerServiceImpl implements AnswerService {
 
-    @Value("${max.fetch.results}")
-    int maxResults;
+  @Value("${max.fetch.results}")
+  int maxResults;
 
-    @Autowired
-    private AnswerRepository answerRepository;
+  @Autowired private AnswerRepository answerRepository;
 
-    @Autowired
-    private StatisticService statisticService;
+  @Autowired private StatisticService statisticService;
 
-    public List<Answer> getAllAnswersForCareUnit(String careUnit) {
-        return answerRepository.findForCareUnit(careUnit, maxResults);
+  public List<Answer> getAllAnswersForCareUnit(String careUnit) {
+    return answerRepository.findForCareUnit(careUnit, maxResults);
+  }
+
+  public AnswersValue getAnswersForCareUnit(String careUnit) {
+    List<Answer> answers = answerRepository.findForCareUnit(careUnit, maxResults);
+    Long totalNumOfAnswers = answerRepository.getNumOfQuestionsForCareUnit(careUnit);
+
+    int questionsLeft = (int) Math.max(0, totalNumOfAnswers - answers.size());
+
+    for (Answer a : answers) {
+      a.setStatusRetrieved();
     }
 
-    public AnswersValue getAnswersForCareUnit(String careUnit) {
-        List<Answer> answers = answerRepository.findForCareUnit(careUnit, maxResults);
-        Long totalNumOfAnswers = answerRepository.getNumOfQuestionsForCareUnit(careUnit);
+    return new AnswersValue(answers, questionsLeft);
+  }
 
-        int questionsLeft = (int) Math.max(0, totalNumOfAnswers - answers.size());
+  public Long saveAnswer(Answer answer) {
+    Answer result = answerRepository.persist(answer);
+    return result.getId();
+  }
 
-        for (Answer a : answers) {
-            a.setStatusRetrieved();
-        }
+  public void deleteAnswersForCareUnit(String careUnit, Set<Long> ids) {
 
-        return new AnswersValue(answers, questionsLeft);
+    new DeleteAnswerValidation(answerRepository).execute(careUnit, ids);
+
+    int deletedAnswers = answerRepository.delete(careUnit, ids);
+
+    if (deletedAnswers != ids.size()) {
+      throw new IllegalStateException("Cannot delete answers. Illegal ids or state");
     }
 
-    public Long saveAnswer(Answer answer) {
-        Answer result = answerRepository.persist(answer);
-        return result.getId();
-    }
+    statisticService.storeStatistics(careUnit, deletedAnswers, MessageType.Answer);
+  }
 
-    public void deleteAnswersForCareUnit(String careUnit, Set<Long> ids) {
-        int deletedAnswers = answerRepository.delete(careUnit, ids);
 
-        // FIXME: Handle differently to provide better error message.
-        if (deletedAnswers != ids.size()) {
-            throw new IllegalStateException("Cannot delete answers. Illegal ids or state");
-        }
-
-        statisticService.storeStatistics(careUnit, deletedAnswers, MessageType.Answer);
-    }
 }
