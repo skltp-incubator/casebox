@@ -1,0 +1,16 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:add="http://www.w3.org/2005/08/addressing" xmlns:urn="urn:riv:insuranceprocess:healthreporting:DeleteAnswersResponder:1">
+    <soapenv:Header>
+        <add:To>casebox</add:To>
+    </soapenv:Header>
+    <soapenv:Body>
+        <urn:DeleteAnswers>
+            <urn:careUnitId root="1.2.752.129.2.1.4.1" extension="${#TestSuite#CARE_UNIT}" />
+            <!--
+            <urn:careGiverId validTimeLow="?" validTimeHigh="?" controlActRoot="?" controlActExtension="?" nullFlavor="?" flavorId="?" updateMode="?" root="?" extension="?" identifierName="?"/>
+            -->
+            <urn:AnswerId>1</urn:AnswerId>
+
+
+        </urn:DeleteAnswers>
+    </soapenv:Body>
+</soapenv:Envelope>
