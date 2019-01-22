@@ -16,7 +16,7 @@ public interface UserService {
      * @param password
      * @param firstName
      * @param lastName
-     * @Return {@link User}
+     * @Return
      * @throws CaseboxException throws exception if user is already existing
      */
     User createUser(String userName, String password, String firstName, String lastName) throws CaseboxException;
