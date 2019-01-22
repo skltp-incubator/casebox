@@ -41,7 +41,7 @@ public interface AnswerService {
     /**
     * Returns the answers for a specific care unit. 
     * @param careUnit	the care unit
-    * @return {@link AnswerValue}
+    * @return
     */
     AnswersValue getAnswersForCareUnit(String careUnit);
 
@@ -54,7 +54,7 @@ public interface AnswerService {
 
     /**
      * Deletes answers for the given answer ids in the list. 
-     * @param id	{@link List} of answer ids
+     * @param ids	{@link List} of answer ids
      */
     void deleteAnswersForCareUnit(String careUnit, Set<Long> ids);
 
