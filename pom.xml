@@ -19,7 +19,7 @@
 	<groupId>se.inera.ifv</groupId>
 	<artifactId>casebox-parent</artifactId>
 	<packaging>pom</packaging>
-	<version>1.1.1-RC6-SNAPSHOT</version>
+	<version>1.1.1-RC6</version>
 	<name>casebox-parent</name>
 
 	<properties>
@@ -36,7 +36,7 @@
 		<url>https://github.com/skltp-incubator/casebox.git</url>
 		<connection>scm:git:https://github.com:443/skltp-incubator/casebox.git</connection>
 		<developerConnection>scm:git:https://github.com:443/skltp-incubator/casebox.git</developerConnection>
-		<tag>v1.1.1-RC1</tag>
+		<tag>v1.1.1-RC6</tag>
 	</scm>
 
 	<modules>
