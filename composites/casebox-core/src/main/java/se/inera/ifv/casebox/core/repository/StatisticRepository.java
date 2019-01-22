@@ -15,7 +15,7 @@ public interface StatisticRepository extends Repository<Statistic, Long> {
      * Returns the statistics for the given messagetype, careunit and the logged date. 
      * @param messageType       Question or Answer message type
      * @param careUnit          The care unit
-     * @param removed           The date the statitics was created.
+     * @param created           The date the statitics was created.
      * @return
      */
     Statistic find(MessageType messageType, String careUnit, Date created);

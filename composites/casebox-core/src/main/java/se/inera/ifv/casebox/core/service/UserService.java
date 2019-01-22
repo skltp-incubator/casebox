@@ -23,7 +23,7 @@ public interface UserService {
     
     /**
      * Delete the user with the given id. 
-     * @param id
+     * @param username
      * @throws CaseboxException throws exception if user is not possible to delete
      */
     void deleteUser(String username) throws CaseboxException;
