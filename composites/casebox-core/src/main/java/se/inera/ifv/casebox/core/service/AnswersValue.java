@@ -34,8 +34,8 @@ public class AnswersValue {
     private int answersLeft;
 
     /**
-      * @param questions
-      * @param questionsLeft
+      * @param answers
+      * @param answersLeft
       */
     public AnswersValue(List<Answer> answers, int answersLeft) {
         this.answers = answers;
