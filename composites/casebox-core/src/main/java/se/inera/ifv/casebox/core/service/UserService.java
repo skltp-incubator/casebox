@@ -9,15 +9,15 @@ import se.inera.ifv.casebox.exception.CaseboxException;
  * Service interface for user interactions. Create, edit and delete a user in casebox.
  */
 public interface UserService {
-    
+
     /**
-     * Create user with username and password. 
+     *
      * @param userName
      * @param password
      * @param firstName
      * @param lastName
-     * @Return
-     * @throws CaseboxException throws exception if user is already existing
+     * @return
+     * @throws CaseboxException
      */
     User createUser(String userName, String password, String firstName, String lastName) throws CaseboxException;
     
