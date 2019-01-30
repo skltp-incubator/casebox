@@ -612,7 +612,7 @@
     </xs:sequence>
     <xs:anyAttribute namespace="##other" processContents="lax"/>
   </xs:complexType>
-</xs:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>http://33.33.33.33:8080/casebox/ws/RecMedCertAnswer/1/rivtabp20</con:endpoint><con:endpoint>http://localhost:8080/casebox/ws/RecMedCertAnswer/1/rivtabp20</con:endpoint></con:endpoints><con:operation isOneWay="false" action="urn:riv:insuranceprocess:healthreporting:ReceiveMedicalCertificateAnswerResponder:1" name="ReceiveMedicalCertificateAnswer" bindingOperationName="ReceiveMedicalCertificateAnswer" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" id="4ce0c2e7-7973-4f44-85f8-0be622f10845"><con:settings/><con:call name="Careunit - CAREUNIT-TEST1234" id="a9f01f5c-bdac-4a94-807d-f1186435c11c"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8080/casebox/ws/RecMedCertAnswer/1/rivtabp20</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:add="http://www.w3.org/2005/08/addressing" xmlns:urn="urn:riv:insuranceprocess:healthreporting:ReceiveMedicalCertificateAnswerResponder:1" xmlns:urn1="urn:riv:insuranceprocess:healthreporting:medcertqa:1" xmlns:urn2="urn:riv:insuranceprocess:healthreporting:2">
+</xs:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>http://localhost:8080/casebox/ws/RecMedCertAnswer/1/rivtabp20</con:endpoint><con:endpoint>https://${#Project#END_POINT_PR}ReceiveMedicalCertificateAnswer${#Project#VERSION_POST}</con:endpoint></con:endpoints><con:operation isOneWay="false" action="urn:riv:insuranceprocess:healthreporting:ReceiveMedicalCertificateAnswerResponder:1" name="ReceiveMedicalCertificateAnswer" bindingOperationName="ReceiveMedicalCertificateAnswer" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" id="4ce0c2e7-7973-4f44-85f8-0be622f10845"><con:settings/><con:call name="Careunit - CAREUNIT-TEST1234" id="a9f01f5c-bdac-4a94-807d-f1186435c11c"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8080/casebox/ws/RecMedCertAnswer/1/rivtabp20</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:add="http://www.w3.org/2005/08/addressing" xmlns:urn="urn:riv:insuranceprocess:healthreporting:ReceiveMedicalCertificateAnswerResponder:1" xmlns:urn1="urn:riv:insuranceprocess:healthreporting:medcertqa:1" xmlns:urn2="urn:riv:insuranceprocess:healthreporting:2">
    <soapenv:Header>
       <add:To>CAREUNIT-TEST1234HejHasse</add:To>
    </soapenv:Header>
@@ -1301,7 +1301,7 @@
     </xs:sequence>
     <xs:anyAttribute namespace="##other" processContents="lax"/>
   </xs:complexType>
-</xs:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>http://33.33.33.33:8080/casebox/ws/RecMedCertQuestion/1/rivtabp20</con:endpoint><con:endpoint>http://localhost:8080/casebox/ws/RecMedCertQuestion/1/rivtabp20</con:endpoint></con:endpoints><con:operation isOneWay="false" action="urn:riv:insuranceprocess:healthreporting:ReceiveMedicalCertificateQuestionResponder:1" name="ReceiveMedicalCertificateQuestion" bindingOperationName="ReceiveMedicalCertificateQuestion" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" id="70094c0c-d93a-4b72-9b9b-64755a2a2c46"><con:settings/><con:call name="Careunit - CAREUNIT-TEST1234" id="ce56bdbf-d72c-4336-a123-8534d0c50324"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8080/casebox-app/ws/RecMedCertQuestion/1/rivtabp20</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:add="http://www.w3.org/2005/08/addressing" xmlns:urn="urn:riv:insuranceprocess:healthreporting:ReceiveMedicalCertificateQuestionResponder:1" xmlns:urn1="urn:riv:insuranceprocess:healthreporting:medcertqa:1" xmlns:urn2="urn:riv:insuranceprocess:healthreporting:2">
+</xs:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>http://localhost:8080/casebox/ws/RecMedCertQuestion/1/rivtabp20</con:endpoint><con:endpoint>https://${#Project#END_POINT_PR}ReceiveMedicalCertificateQuestion${#Project#VERSION_POST}</con:endpoint></con:endpoints><con:operation isOneWay="false" action="urn:riv:insuranceprocess:healthreporting:ReceiveMedicalCertificateQuestionResponder:1" name="ReceiveMedicalCertificateQuestion" bindingOperationName="ReceiveMedicalCertificateQuestion" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" id="70094c0c-d93a-4b72-9b9b-64755a2a2c46"><con:settings/><con:call name="Careunit - CAREUNIT-TEST1234" id="ce56bdbf-d72c-4336-a123-8534d0c50324"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8080/casebox-app/ws/RecMedCertQuestion/1/rivtabp20</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:add="http://www.w3.org/2005/08/addressing" xmlns:urn="urn:riv:insuranceprocess:healthreporting:ReceiveMedicalCertificateQuestionResponder:1" xmlns:urn1="urn:riv:insuranceprocess:healthreporting:medcertqa:1" xmlns:urn2="urn:riv:insuranceprocess:healthreporting:2">
    <soapenv:Header>
       <add:To>CAREUNIT-TEST1234</add:To>
    </soapenv:Header>
@@ -2148,7 +2148,7 @@
     </xs:sequence>
     <xs:anyAttribute namespace="##other" processContents="lax"/>
   </xs:complexType>
-</xs:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>http://33.33.33.33:8080/casebox/ws/FindAllAnswers/1/rivtabp20</con:endpoint><con:endpoint>http://localhost:8080/casebox/ws/FindAllAnswers/1/rivtabp20</con:endpoint></con:endpoints><con:operation isOneWay="false" action="urn:riv:insuranceprocess:healthreporting:FindAllAnswersResponder:1" name="FindAllAnswers" bindingOperationName="FindAllAnswers" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" id="a8839cb6-1f55-4d41-bd8a-8b6041223952"><con:settings/><con:call name="Careunit - CAREUNIT-TEST1234" id="58b40c30-90ce-41e9-aae7-0496b641e736"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8080/casebox-app/ws/FindAllAnswers/1/rivtabp20</con:endpoint><con:request><![CDATA[<?xml version='1.0' encoding='UTF-8'?>
+</xs:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>http://localhost:8080/casebox/ws/FindAllAnswers/1/rivtabp20</con:endpoint><con:endpoint>https://${#Project#END_POINT_PR}FindAllAnswers${#Project#VERSION_POST}</con:endpoint></con:endpoints><con:operation isOneWay="false" action="urn:riv:insuranceprocess:healthreporting:FindAllAnswersResponder:1" name="FindAllAnswers" bindingOperationName="FindAllAnswers" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" id="a8839cb6-1f55-4d41-bd8a-8b6041223952"><con:settings/><con:call name="Careunit - CAREUNIT-TEST1234" id="58b40c30-90ce-41e9-aae7-0496b641e736"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8080/casebox-app/ws/FindAllAnswers/1/rivtabp20</con:endpoint><con:request><![CDATA[<?xml version='1.0' encoding='UTF-8'?>
 <s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
 	<s:Header>
 		<h:To xmlns:h="http://www.w3.org/2005/08/addressing" xmlns="http://www.w3.org/2005/08/addressing"
@@ -2931,7 +2931,7 @@
     </xs:sequence>
     <xs:anyAttribute namespace="##other" processContents="lax"/>
   </xs:complexType>
-</xs:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>http://33.33.33.33:8080/casebox/ws/FindAllQuestions/1/rivtabp20</con:endpoint><con:endpoint>http://localhost:8080/casebox/ws/FindAllQuestions/1/rivtabp20</con:endpoint></con:endpoints><con:operation isOneWay="false" action="urn:riv:insuranceprocess:healthreporting:FindAllQuestionsResponder:1" name="FindAllQuestions" bindingOperationName="FindAllQuestions" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" id="2ce51465-493d-4165-91fc-2012504c234f"><con:settings/><con:call name="Careunit - CAREUNIT-TEST1234" id="c715b4f6-9e5a-4bab-9c99-642b97b10369"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8080/casebox-app/ws/FindAllQuestions/1/rivtabp20</con:endpoint><con:request><![CDATA[<?xml version='1.0' encoding='UTF-8'?>
+</xs:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>http://localhost:8080/casebox/ws/FindAllQuestions/1/rivtabp20</con:endpoint><con:endpoint>https://${#Project#END_POINT_PR}FindAllQuestions${#Project#VERSION_POST}</con:endpoint></con:endpoints><con:operation isOneWay="false" action="urn:riv:insuranceprocess:healthreporting:FindAllQuestionsResponder:1" name="FindAllQuestions" bindingOperationName="FindAllQuestions" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" id="2ce51465-493d-4165-91fc-2012504c234f"><con:settings/><con:call name="Careunit - CAREUNIT-TEST1234" id="c715b4f6-9e5a-4bab-9c99-642b97b10369"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8080/casebox-app/ws/FindAllQuestions/1/rivtabp20</con:endpoint><con:request><![CDATA[<?xml version='1.0' encoding='UTF-8'?>
 <s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
 	<s:Header>
 		<h:To xmlns:h="http://www.w3.org/2005/08/addressing" xmlns="http://www.w3.org/2005/08/addressing"
@@ -3472,7 +3472,7 @@
     </xs:sequence>
     <xs:anyAttribute namespace="##other" processContents="lax"/>
   </xs:complexType>
-</xs:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>http://33.33.33.33:8080/casebox/ws/DeleteAnswers/1/rivtabp20</con:endpoint><con:endpoint>http://localhost:8080/casebox/ws/DeleteAnswers/1/rivtabp20</con:endpoint></con:endpoints><con:operation isOneWay="false" action="urn:riv:insuranceprocess:healthreporting:DeleteAnswersResponder:1" name="DeleteAnswers" bindingOperationName="DeleteAnswers" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" id="39f00b2e-ddb2-4134-9853-a6420050473d"><con:settings/><con:call name="Careunit - CAREUNIT-TEST1234" id="3ea75004-c2f4-4841-bff4-854780c51ddf"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8080/casebox-app/ws/DeleteAnswers/1/rivtabp20</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:add="http://www.w3.org/2005/08/addressing" xmlns:urn="urn:riv:insuranceprocess:healthreporting:DeleteAnswersResponder:1">
+</xs:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>http://localhost:8080/casebox/ws/DeleteAnswers/1/rivtabp20</con:endpoint><con:endpoint>https://${#Project#END_POINT_PR}DeleteAnswers${#Project#VERSION_POST}</con:endpoint></con:endpoints><con:operation isOneWay="false" action="urn:riv:insuranceprocess:healthreporting:DeleteAnswersResponder:1" name="DeleteAnswers" bindingOperationName="DeleteAnswers" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" id="39f00b2e-ddb2-4134-9853-a6420050473d"><con:settings/><con:call name="Careunit - CAREUNIT-TEST1234" id="3ea75004-c2f4-4841-bff4-854780c51ddf"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8080/casebox-app/ws/DeleteAnswers/1/rivtabp20</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:add="http://www.w3.org/2005/08/addressing" xmlns:urn="urn:riv:insuranceprocess:healthreporting:DeleteAnswersResponder:1">
    <soapenv:Header>
       <add:To>casebox</add:To>
    </soapenv:Header>
@@ -4015,7 +4015,7 @@
     </xs:sequence>
     <xs:anyAttribute namespace="##other" processContents="lax"/>
   </xs:complexType>
-</xs:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>http://33.33.33.33:8080/casebox/ws/DeleteQuestions/1/rivtabp20</con:endpoint><con:endpoint>http://localhost:8080/casebox/ws/DeleteQuestions/1/rivtabp20</con:endpoint></con:endpoints><con:operation isOneWay="false" action="urn:riv:insuranceprocess:healthreporting:DeleteQuestionsResponder:1" name="DeleteQuestions" bindingOperationName="DeleteQuestions" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" id="ee50e1ad-6064-4647-be0f-4cae6c27687e"><con:settings/><con:call name="Careunit - CAREUNIT-TEST1234" id="b793fbd6-7ef5-4d05-b25d-6d9383d3ea96"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8080/casebox-app/ws/DeleteQuestions/1/rivtabp20</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:add="http://www.w3.org/2005/08/addressing" xmlns:urn="urn:riv:insuranceprocess:healthreporting:DeleteQuestionsResponder:1">
+</xs:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>http://localhost:8080/casebox/ws/DeleteQuestions/1/rivtabp20</con:endpoint><con:endpoint>https://${#Project#END_POINT_PR}DeleteQuestions${#Project#VERSION_POST}</con:endpoint></con:endpoints><con:operation isOneWay="false" action="urn:riv:insuranceprocess:healthreporting:DeleteQuestionsResponder:1" name="DeleteQuestions" bindingOperationName="DeleteQuestions" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" id="ee50e1ad-6064-4647-be0f-4cae6c27687e"><con:settings/><con:call name="Careunit - CAREUNIT-TEST1234" id="b793fbd6-7ef5-4d05-b25d-6d9383d3ea96"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8080/casebox-app/ws/DeleteQuestions/1/rivtabp20</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:add="http://www.w3.org/2005/08/addressing" xmlns:urn="urn:riv:insuranceprocess:healthreporting:DeleteQuestionsResponder:1">
    <soapenv:Header>
       <add:To>casebox</add:To>
    </soapenv:Header>
@@ -4028,9 +4028,17 @@
          <!--You may enter ANY elements at this point-->
       </urn:DeleteQuestions>
    </soapenv:Body>
-</soapenv:Envelope>]]></con:request><con:credentials><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:riv:insuranceprocess:healthreporting:DeleteQuestionsResponder:1"/><con:wsrmConfig version="1.2"/></con:call></con:operation></con:interface><con:testSuite name="QuestionsFlow" id="2f81329d-7d6f-44c9-a97f-0123fdac9c2f"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="ReceiveMedCertQuestions" searchProperties="true" id="c0606772-6390-4193-9b15-f89e6f663a8d"><con:settings/><con:testStep type="request" name="ReceiveMedCertQuestion" id="c6087be7-bf9a-408b-aa9a-654ba907d46a"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>ReceiveMedicalCertificateQuestionResponderBinding</con:interface><con:operation>ReceiveMedicalCertificateQuestion</con:operation><con:request name="ReceiveMedCertQuestion" id="bad343bf-aab8-4d25-acbd-b501eb08c0c1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://test.esb.ntjp.se/vp/ReceiveMedicalCertificateQuestion/1/rivtabp20</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:add="http://www.w3.org/2005/08/addressing" xmlns:urn="urn:riv:insuranceprocess:healthreporting:ReceiveMedicalCertificateQuestionResponder:1" xmlns:urn1="urn:riv:insuranceprocess:healthreporting:medcertqa:1" xmlns:urn2="urn:riv:insuranceprocess:healthreporting:2">
+</soapenv:Envelope>]]></con:request><con:credentials><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:riv:insuranceprocess:healthreporting:DeleteQuestionsResponder:1"/><con:wsrmConfig version="1.2"/></con:call></con:operation></con:interface><con:testSuite name="QuestionsFlow" id="2f81329d-7d6f-44c9-a97f-0123fdac9c2f"><con:settings/><con:runType>PARALLELL</con:runType><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="ReceiveMedCertQuestions" searchProperties="true" id="c0606772-6390-4193-9b15-f89e6f663a8d" timeout="0" wsrmEnabled="false" wsrmVersion="1.0" wsrmAckTo="" amfAuthorisation="false" amfEndpoint="" amfLogin="" amfPassword=""><con:description>Use https://${#Project#END_POINT_PR}ReceiveMedicalCertificateQuestion${#Project#VERSION_POST} as endpoint for the requests
+To run tests against the  "Test"- enviorment use 
+END_POINT_PR = test.esb.ntjp.se/vp/
+and CARE_UNIT = Test  
+or CARE_UNIT = 0123456777   
+for test against QA use:
+END_POINT_PR = qa.esb.ntjp.se/vp/
+and CARE_UNIT = 5565594230  
+</con:description><con:settings/><con:testStep type="request" name="ReceiveMedCertQuestion" id="c6087be7-bf9a-408b-aa9a-654ba907d46a"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>ReceiveMedicalCertificateQuestionResponderBinding</con:interface><con:operation>ReceiveMedicalCertificateQuestion</con:operation><con:request name="ReceiveMedCertQuestion" id="bad343bf-aab8-4d25-acbd-b501eb08c0c1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://${#Project#END_POINT_PR}ReceiveMedicalCertificateQuestion${#Project#VERSION_POST}</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:add="http://www.w3.org/2005/08/addressing" xmlns:urn="urn:riv:insuranceprocess:healthreporting:ReceiveMedicalCertificateQuestionResponder:1" xmlns:urn1="urn:riv:insuranceprocess:healthreporting:medcertqa:1" xmlns:urn2="urn:riv:insuranceprocess:healthreporting:2">
    <soapenv:Header>
-      <add:To>${#TestSuite#CARE_UNIT}</add:To>
+      <add:To>${#Project#CARE_UNIT}</add:To>
       <!--add:To>Test</add:To-->
    </soapenv:Header>
    <soapenv:Body>
@@ -4083,38 +4091,132 @@ Vi undrar hur det går med denna patient?</urn1:meddelandeText>
          </urn:Question>
       </urn:ReceiveMedicalCertificateQuestion>
    </soapenv:Body>
-</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="7724dec8-44e9-4fd4-a993-6707a80d59aa"/><con:assertion type="Simple Contains" name="Contains" id="11bd0dad-e74c-48d7-b9f0-16cdab86f3bb"><con:configuration><token>&lt;ns3:resultCode>OK&lt;/ns3:resultCode></token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" name="FindAllQuestions" id="a48a3f82-3bf3-4f15-b68a-8746ceb8d152"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>FindAllQuestionsResponderBinding</con:interface><con:operation>FindAllQuestions</con:operation><con:request name="FindAllQuestions" id="5ea639b6-1b51-415e-8296-f4065792aed3" sslKeystore=""><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://test.esb.ntjp.se/vp/FindAllQuestions/1/rivtabp20</con:endpoint><con:request><![CDATA[<?xml version='1.0' encoding='UTF-8'?>
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="7724dec8-44e9-4fd4-a993-6707a80d59aa"/><con:assertion type="Simple Contains" name="Contains" id="11bd0dad-e74c-48d7-b9f0-16cdab86f3bb"><con:configuration><token>&lt;ns3:resultCode>OK&lt;/ns3:resultCode></token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:username/><con:domain/><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" name="FindAllQuestions" id="a48a3f82-3bf3-4f15-b68a-8746ceb8d152"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>FindAllQuestionsResponderBinding</con:interface><con:operation>FindAllQuestions</con:operation><con:request name="FindAllQuestions" id="5ea639b6-1b51-415e-8296-f4065792aed3" sslKeystore=""><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://${#Project#END_POINT_PR}FindAllQuestions${#Project#VERSION_POST}</con:endpoint><con:request><![CDATA[<?xml version='1.0' encoding='UTF-8'?>
 <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:add="http://www.w3.org/2005/08/addressing" xmlns:urn="urn:riv:insuranceprocess:healthreporting:FindAllQuestionsResponder:1">
    <soapenv:Header>
-      <add:To>Test</add:To>
+      <add:To>${#Project#CARE_UNIT}</add:To>
    </soapenv:Header>
    <soapenv:Body>
       <urn:FindAllQuestions>
-         <urn:careUnitId root="VardenhetY" extension="${#TestSuite#CARE_UNIT}"/>
+         <urn:careUnitId root="${#Project#CARE_UNIT}" extension="${#Project#CARE_UNIT}"/>
          
 
       </urn:FindAllQuestions>
    </soapenv:Body>
 </soapenv:Envelope>
-]]></con:request><con:assertion type="SOAP Response" id="6d2ff3af-c791-4862-b7a0-36ad71d65bc9"/><con:assertion type="Simple Contains" name="Contains resultcode OK" id="ee2cb3d5-ff0a-43a3-bc25-9afbeb811524"><con:configuration><token>resultCode>OK&lt;/ns</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Simple Contains" name="Contains questionsleft = 0" id="f6f6d47d-7b97-4a75-84f8-7f62ceb6725c"><con:configuration><token>&lt;questionsLeft>0&lt;/questionsLeft></token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="transfer" name="MoveIdToquestionId" id="aacfa48d-fb97-42ef-8392-df8048acd786"><con:settings/><con:config xsi:type="con:PropertyTransfersStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false"><con:name>id</con:name><con:sourceType>Response</con:sourceType><con:sourceStep>FindAllQuestions</con:sourceStep><con:sourcePath>/*:Envelope/*:Body/*:FindAllQuestionsResponse/*:questions/*:question/*:id</con:sourcePath><con:targetType>Request</con:targetType><con:targetStep>DeleteQuestions - Careunit - CAREUNIT-TEST1234</con:targetStep><con:targetPath>/*:Envelope/*:Body/*:DeleteQuestions/*:questionId</con:targetPath><con:upgraded>true</con:upgraded></con:transfers></con:config></con:testStep><con:testStep type="request" id="94979180-d0bb-48ec-8427-3e243dd0b2ee" name="DeleteQuestions - Careunit - CAREUNIT-TEST1234"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>DeleteQuestionsResponderBinding</con:interface><con:operation>DeleteQuestions</con:operation><con:request name="DeleteQuestions - Careunit - CAREUNIT-TEST1234" outgoingWss="" incomingWss="" timeout="" sslKeystore="" useWsAddressing="false" useWsReliableMessaging="false" wssPasswordType="" id="c408fea3-fa6e-4918-8064-a80607dd5933"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://test.esb.ntjp.se/vp/DeleteQuestions/1/rivtabp20</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:add="http://www.w3.org/2005/08/addressing" xmlns:urn="urn:riv:insuranceprocess:healthreporting:DeleteQuestionsResponder:1">
+]]></con:request><con:assertion type="SOAP Response" id="6d2ff3af-c791-4862-b7a0-36ad71d65bc9"/><con:assertion type="Simple Contains" name="Contains resultcode OK" id="ee2cb3d5-ff0a-43a3-bc25-9afbeb811524"><con:configuration><token>resultCode>OK&lt;/ns</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Simple Contains" name="Contains questionsleft = 0" id="f6f6d47d-7b97-4a75-84f8-7f62ceb6725c"><con:configuration><token>&lt;questionsLeft>0&lt;/questionsLeft></token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="transfer" name="MoveIdToquestionId" id="aacfa48d-fb97-42ef-8392-df8048acd786"><con:settings/><con:config xsi:type="con:PropertyTransfersStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false"><con:name>id</con:name><con:sourceType>Response</con:sourceType><con:sourceStep>FindAllQuestions</con:sourceStep><con:sourcePath>/*:Envelope/*:Body/*:FindAllQuestionsResponse/*:questions/*:question/*:id</con:sourcePath><con:targetType>Request</con:targetType><con:targetStep>DeleteQuestions - Careunit - CAREUNIT-TEST1234</con:targetStep><con:targetPath>/*:Envelope/*:Body/*:DeleteQuestions/*:questionId</con:targetPath><con:upgraded>true</con:upgraded></con:transfers></con:config></con:testStep><con:testStep type="request" id="94979180-d0bb-48ec-8427-3e243dd0b2ee" name="DeleteQuestions - Careunit - CAREUNIT-TEST1234"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>DeleteQuestionsResponderBinding</con:interface><con:operation>DeleteQuestions</con:operation><con:request name="DeleteQuestions - Careunit - CAREUNIT-TEST1234" outgoingWss="" incomingWss="" timeout="" sslKeystore="" useWsAddressing="false" useWsReliableMessaging="false" wssPasswordType="" id="c408fea3-fa6e-4918-8064-a80607dd5933"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://${#Project#END_POINT_PR}DeleteQuestions${#Project#VERSION_POST}</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:add="http://www.w3.org/2005/08/addressing" xmlns:urn="urn:riv:insuranceprocess:healthreporting:DeleteQuestionsResponder:1">
    <soapenv:Header>
-      <add:To>${#TestSuite#CARE_UNIT}</add:To>
+      <add:To>${#Project#CARE_UNIT}</add:To>
    </soapenv:Header>
    <soapenv:Body>
       <urn:DeleteQuestions>
-         <urn:careUnitId extension="${#TestSuite#CARE_UNIT}"/>
+         <urn:careUnitId extension="${#Project#CARE_UNIT}"/>
          <!--urn:careGiverId validTimeLow="?" validTimeHigh="?" controlActRoot="?" controlActExtension="?" nullFlavor="?" flavorId="?" updateMode="?" root="?" extension="?" identifierName="?"/-->
          <!--1 or more repetitions:-->
          <!--urn:questionId>51430</urn:questionId-->
-         <urn:questionId>52646</urn:questionId>
-         <urn:questionId>52645</urn:questionId>
-       
-         <!--You may enter ANY elements at this point-->
+         <urn:questionId>51822</urn:questionId>
+         
       </urn:DeleteQuestions>
    </soapenv:Body>
-</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="12630c2f-c0e3-42a8-80e6-df6428476191" name="SOAP Response"/><con:credentials><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:riv:insuranceprocess:healthreporting:DeleteQuestionsResponder:1"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:loadTest id="c4a2aae2-cbe6-499a-bb7a-d489ea2d9e7d" name="LoadTest"><con:settings><con:setting id="HttpSettings@close-connections">false</con:setting></con:settings><con:threadCount>1</con:threadCount><con:startDelay>0</con:startDelay><con:sampleInterval>250</con:sampleInterval><con:calculateTPSOnTimePassed>true</con:calculateTPSOnTimePassed><con:resetStatisticsOnThreadCountChange>true</con:resetStatisticsOnThreadCountChange><con:historyLimit>-1</con:historyLimit><con:testLimit>60</con:testLimit><con:limitType>TIME</con:limitType><con:loadStrategy><con:type>Simple</con:type><con:config><testDelay>1000</testDelay><randomFactor>0.5</randomFactor></con:config></con:loadStrategy><con:assertion type="Step Status" name="Step Status"/><con:maxAssertionErrors>100</con:maxAssertionErrors><con:cancelExcessiveThreads>true</con:cancelExcessiveThreads><con:strategyInterval>500</con:strategyInterval></con:loadTest><con:properties><con:property><con:name>CARE_UNIT</con:name><con:value>CARE_UNITAPA</con:value></con:property></con:properties></con:testCase><con:properties><con:property><con:name>CARE_UNIT</con:name><con:value>Test</con:value></con:property></con:properties></con:testSuite><con:testSuite name="AnswersFlow" id="6a93cce7-30fa-49e3-b9a1-2a156d2786c3"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="ReceiveMedCertAnswer" searchProperties="true" id="bc560fff-f804-4909-8542-0c119b685b51"><con:settings/><con:testStep type="request" name="ReceiveMedCertAnswer" id="a19a975b-2740-4639-a310-49a23b4dd6be"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>ReceiveMedicalCertificateAnswerResponderBinding</con:interface><con:operation>ReceiveMedicalCertificateAnswer</con:operation><con:request name="ReceiveMedCertAnswer" id="2232bc45-f926-46ca-b9f4-7ca2891b2ab6"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://test.esb.ntjp.se/vp/ReceiveMedicalCertificateAnswer/1/rivtabp20</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:add="http://www.w3.org/2005/08/addressing" xmlns:urn="urn:riv:insuranceprocess:healthreporting:ReceiveMedicalCertificateAnswerResponder:1" xmlns:urn1="urn:riv:insuranceprocess:healthreporting:medcertqa:1" xmlns:urn2="urn:riv:insuranceprocess:healthreporting:2">
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="12630c2f-c0e3-42a8-80e6-df6428476191" name="SOAP Response"/><con:credentials><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:riv:insuranceprocess:healthreporting:DeleteQuestionsResponder:1"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:loadTest id="c4a2aae2-cbe6-499a-bb7a-d489ea2d9e7d" name="LoadTest"><con:settings><con:setting id="HttpSettings@close-connections">false</con:setting></con:settings><con:threadCount>1</con:threadCount><con:startDelay>0</con:startDelay><con:sampleInterval>250</con:sampleInterval><con:calculateTPSOnTimePassed>true</con:calculateTPSOnTimePassed><con:resetStatisticsOnThreadCountChange>true</con:resetStatisticsOnThreadCountChange><con:historyLimit>-1</con:historyLimit><con:testLimit>60</con:testLimit><con:limitType>TIME</con:limitType><con:loadStrategy><con:type>Thread</con:type><con:config><startThreadCount>1</startThreadCount><endThreadCount>10</endThreadCount></con:config></con:loadStrategy><con:assertion type="Step Status" name="Step Status"/><con:maxAssertionErrors>100</con:maxAssertionErrors><con:cancelExcessiveThreads>true</con:cancelExcessiveThreads><con:strategyInterval>500</con:strategyInterval></con:loadTest><con:properties/></con:testCase><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="ReceiveMedCertQuestionsFromTwoUnits" searchProperties="true" id="56846e59-4335-4e38-9b24-6ef83e1a2986"><con:description>This is basically the same as ReceiveMedCertQuestion. But load test can run on 2 threads.   </con:description><con:settings/><con:testStep type="request" name="ReceiveMedCertQuestion" id="18e9d5e0-83f1-451d-a1de-e93746ba6a86"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>ReceiveMedicalCertificateQuestionResponderBinding</con:interface><con:operation>ReceiveMedicalCertificateQuestion</con:operation><con:request name="ReceiveMedCertQuestion" id="bad343bf-aab8-4d25-acbd-b501eb08c0c1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://${#Project#END_POINT_PR}ReceiveMedicalCertificateQuestion${#Project#VERSION_POST}</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:add="http://www.w3.org/2005/08/addressing" xmlns:urn="urn:riv:insuranceprocess:healthreporting:ReceiveMedicalCertificateQuestionResponder:1" xmlns:urn1="urn:riv:insuranceprocess:healthreporting:medcertqa:1" xmlns:urn2="urn:riv:insuranceprocess:healthreporting:2">
    <soapenv:Header>
-      <add:To>${#TestSuite#CARE_UNIT}</add:To>
+      <add:To>${#TestCase#TEST_CASE_UNIT}</add:To>
+      <!--add:To>Test</add:To-->
+   </soapenv:Header>
+   <soapenv:Body>
+      <urn:ReceiveMedicalCertificateQuestion>
+         <urn:Question>
+            <urn:fkReferens-id> Refid FK</urn:fkReferens-id>
+            <urn:amne>Komplettering</urn:amne>
+            <urn:fraga>
+               <urn1:meddelandeText>Hej!
+Vi undrar hur det går med denna patient?</urn1:meddelandeText>
+               <urn1:signeringsTidpunkt>2010-12-01T12:00:05</urn1:signeringsTidpunkt>
+            </urn:fraga>
+            <urn:avsantTidpunkt>2010-12-01T12:00:05</urn:avsantTidpunkt>
+            <urn:fkKontaktInfo>
+               <urn1:kontakt>Kalle Larsson, Göteborg</urn1:kontakt>
+            </urn:fkKontaktInfo>
+            <urn:adressVard>
+               <urn1:hosPersonal>
+                  <urn2:personal-id root="XXX" extension="YYY"/>
+                  <urn2:fullstandigtNamn>Pär Läkare</urn2:fullstandigtNamn>
+                  <urn2:enhet>
+                     <urn2:enhets-id root="Id vardenhet A " extension="HSA-ID O.I.D." />
+                     <urn2:enhetsnamn>Vårdenhet A</urn2:enhetsnamn>
+                     <urn2:postadress>Sjukhusstigen 23</urn2:postadress>
+                     <urn2:postnummer>12345</urn2:postnummer>
+                     <urn2:postort>Teststad</urn2:postort>
+                     <urn2:telefonnummer>012-3456789</urn2:telefonnummer>
+                     <urn2:epost>vardenhetahotmail.com</urn2:epost>
+                     <urn2:vardgivare>
+                        <urn2:vardgivare-id root="Id Vardgivare X" extension="HSA-ID O.I.D." />
+                        <urn2:vardgivarnamn>Vardgivare X</urn2:vardgivarnamn>
+                     </urn2:vardgivare>
+                  </urn2:enhet>
+               </urn1:hosPersonal>
+            </urn:adressVard>
+            <urn:fkMeddelanderubrik>xxxxx</urn:fkMeddelanderubrik>
+            <urn:fkKomplettering>
+               <urn1:falt>8a</urn1:falt>
+               <urn1:text>Ett fält måste vara ifyllt!</urn1:text>
+            </urn:fkKomplettering>
+            <urn:fkSistaDatumForSvar>2011-01-31</urn:fkSistaDatumForSvar>
+            <urn:lakarutlatande>
+               <urn1:lakarutlatande-id>GUID lakarintyg</urn1:lakarutlatande-id>
+               <urn1:signeringsTidpunkt>2010-11-21T09:07:01</urn1:signeringsTidpunkt>
+               <urn1:patient>
+                  <urn2:person-id root="191212121212" extension="Personnummer O.I.D" />
+                  <urn2:fullstandigtNamn>Test Persson</urn2:fullstandigtNamn>
+               </urn1:patient>
+            </urn:lakarutlatande>
+         </urn:Question>
+      </urn:ReceiveMedicalCertificateQuestion>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="7724dec8-44e9-4fd4-a993-6707a80d59aa"/><con:assertion type="Simple Contains" name="Contains" id="11bd0dad-e74c-48d7-b9f0-16cdab86f3bb"><con:configuration><token>&lt;ns3:resultCode>OK&lt;/ns3:resultCode></token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:username/><con:domain/><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" name="FindAllQuestions" id="e130b752-359b-4e1d-a310-2556e5dff0e3"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>FindAllQuestionsResponderBinding</con:interface><con:operation>FindAllQuestions</con:operation><con:request name="FindAllQuestions" id="5ea639b6-1b51-415e-8296-f4065792aed3" sslKeystore=""><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://${#Project#END_POINT_PR}FindAllQuestions${#Project#VERSION_POST}</con:endpoint><con:request><![CDATA[<?xml version='1.0' encoding='UTF-8'?>
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:add="http://www.w3.org/2005/08/addressing" xmlns:urn="urn:riv:insuranceprocess:healthreporting:FindAllQuestionsResponder:1">
+   <soapenv:Header>
+      <add:To>${#TestCase#TEST_CASE_UNIT}</add:To>
+   </soapenv:Header>
+   <soapenv:Body>
+      <urn:FindAllQuestions>
+         <urn:careUnitId root="${#TestCase#TEST_CASE_UNIT}" extension="${#TestCase#TEST_CASE_UNIT}"/>
+         
+
+      </urn:FindAllQuestions>
+   </soapenv:Body>
+</soapenv:Envelope>
+]]></con:request><con:assertion type="SOAP Response" id="6d2ff3af-c791-4862-b7a0-36ad71d65bc9"/><con:assertion type="Simple Contains" name="Contains resultcode OK" id="ee2cb3d5-ff0a-43a3-bc25-9afbeb811524"><con:configuration><token>resultCode>OK&lt;/ns</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Simple Contains" name="Contains questionsleft = 0" id="f6f6d47d-7b97-4a75-84f8-7f62ceb6725c"><con:configuration><token>&lt;questionsLeft>0&lt;/questionsLeft></token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="transfer" name="MoveIdToquestionId" id="82b79316-9586-467c-9f90-7b5ae1222814"><con:settings/><con:config xsi:type="con:PropertyTransfersStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false"><con:name>id</con:name><con:sourceType>Response</con:sourceType><con:sourceStep>FindAllQuestions</con:sourceStep><con:sourcePath>/*:Envelope/*:Body/*:FindAllQuestionsResponse/*:questions/*:question/*:id</con:sourcePath><con:targetType>Request</con:targetType><con:targetStep>DeleteQuestions - Careunit - CAREUNIT-TEST1234</con:targetStep><con:targetPath>/*:Envelope/*:Body/*:DeleteQuestions/*:questionId</con:targetPath><con:upgraded>true</con:upgraded></con:transfers></con:config></con:testStep><con:testStep type="request" id="3bdda5b8-e908-4cf4-8db9-93c4f3561aad" name="DeleteQuestions - Careunit - CAREUNIT-TEST1234"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>DeleteQuestionsResponderBinding</con:interface><con:operation>DeleteQuestions</con:operation><con:request name="DeleteQuestions - Careunit - CAREUNIT-TEST1234" outgoingWss="" incomingWss="" timeout="" sslKeystore="" useWsAddressing="false" useWsReliableMessaging="false" wssPasswordType="" id="c408fea3-fa6e-4918-8064-a80607dd5933"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://${#Project#END_POINT_PR}DeleteQuestions${#Project#VERSION_POST}</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:add="http://www.w3.org/2005/08/addressing" xmlns:urn="urn:riv:insuranceprocess:healthreporting:DeleteQuestionsResponder:1">
+   <soapenv:Header>
+      <add:To>${#TestCase#TEST_CASE_UNIT}</add:To>
+   </soapenv:Header>
+   <soapenv:Body>
+      <urn:DeleteQuestions>
+         <urn:careUnitId extension="${#TestCase#TEST_CASE_UNIT}"/>
+         <!--urn:careGiverId validTimeLow="?" validTimeHigh="?" controlActRoot="?" controlActExtension="?" nullFlavor="?" flavorId="?" updateMode="?" root="?" extension="?" identifierName="?"/-->
+         <!--1 or more repetitions:-->
+         <!--urn:questionId>51430</urn:questionId-->
+         <urn:questionId>51464</urn:questionId>
+         
+      </urn:DeleteQuestions>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="12630c2f-c0e3-42a8-80e6-df6428476191" name="SOAP Response"/><con:credentials><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:riv:insuranceprocess:healthreporting:DeleteQuestionsResponder:1"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:loadTest id="750285c9-6a3b-441c-a3d8-981a74eeb3ba" name="LoadTest"><con:settings><con:setting id="HttpSettings@close-connections">false</con:setting></con:settings><con:threadCount>2</con:threadCount><con:startDelay>0</con:startDelay><con:sampleInterval>250</con:sampleInterval><con:calculateTPSOnTimePassed>true</con:calculateTPSOnTimePassed><con:resetStatisticsOnThreadCountChange>true</con:resetStatisticsOnThreadCountChange><con:historyLimit>-1</con:historyLimit><con:testLimit>60</con:testLimit><con:limitType>TIME</con:limitType><con:loadStrategy><con:type>Thread</con:type><con:config><startThreadCount>2</startThreadCount><endThreadCount>2</endThreadCount></con:config></con:loadStrategy><con:assertion type="Step Status" name="Step Status"/><con:maxAssertionErrors>100</con:maxAssertionErrors><con:cancelExcessiveThreads>true</con:cancelExcessiveThreads><con:strategyInterval>500</con:strategyInterval></con:loadTest><con:setupScript>def isTest=false
+if(isTest){
+	if(context.ThreadIndex==0){
+		testRunner.testCase.setPropertyValue( "TEST_CASE_UNIT", "0123456777" );
+	}else{
+		testRunner.testCase.setPropertyValue( "TEST_CASE_UNIT", "Test" );
+	}	
+}else{//if is QA
+	if(context.ThreadIndex==0){
+		testRunner.testCase.setPropertyValue( "TEST_CASE_UNIT", "CASEBOX-QA" );
+	}else{
+		testRunner.testCase.setPropertyValue( "TEST_CASE_UNIT", "5565594230" );
+	}
+}
+</con:setupScript><con:properties><con:property><con:name>TEST_CASE_UNIT</con:name><con:value>CASEBOX-QA</con:value></con:property></con:properties></con:testCase><con:properties/></con:testSuite><con:testSuite name="AnswersFlow" id="6a93cce7-30fa-49e3-b9a1-2a156d2786c3"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="ReceiveMedCertAnswer" searchProperties="true" id="bc560fff-f804-4909-8542-0c119b685b51"><con:settings/><con:testStep type="request" name="ReceiveMedCertAnswer" id="a19a975b-2740-4639-a310-49a23b4dd6be"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>ReceiveMedicalCertificateAnswerResponderBinding</con:interface><con:operation>ReceiveMedicalCertificateAnswer</con:operation><con:request name="ReceiveMedCertAnswer" id="2232bc45-f926-46ca-b9f4-7ca2891b2ab6"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://${#Project#END_POINT_PR}ReceiveMedicalCertificateAnswer${#Project#VERSION_POST}</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:add="http://www.w3.org/2005/08/addressing" xmlns:urn="urn:riv:insuranceprocess:healthreporting:ReceiveMedicalCertificateAnswerResponder:1" xmlns:urn1="urn:riv:insuranceprocess:healthreporting:medcertqa:1" xmlns:urn2="urn:riv:insuranceprocess:healthreporting:2">
+   <soapenv:Header>
+      <add:To>${#Project#CARE_UNIT}</add:To>
    </soapenv:Header>
    <soapenv:Body>
       <urn:ReceiveMedicalCertificateAnswer>
@@ -4187,33 +4289,184 @@ Vi undrar hur det går med denna patient?</urn1:meddelandeText>
          <!--You may enter ANY elements at this point-->
       </urn:ReceiveMedicalCertificateAnswer>
    </soapenv:Body>
-</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="0f50b626-4099-4f3b-b1fe-8a32fd2068d7"/><con:assertion type="Simple Contains" name="Contains resultcode OK" id="102d8e1e-4a71-4efa-a464-dfb8699d9c58"><con:configuration><token>resultCode>OK&lt;/ns</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" name="FindAllAnswers" id="55733494-be29-455e-8ef8-f239e42fe273"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>FindAllAnswersResponderBinding</con:interface><con:operation>FindAllAnswers</con:operation><con:request name="FindAllAnswers" id="602cdc11-7a96-40d5-88c0-1766d721432e"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://test.esb.ntjp.se/vp/FindAllAnswers/1/rivtabp20</con:endpoint><con:request><![CDATA[<?xml version='1.0' encoding='UTF-8'?>
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="0f50b626-4099-4f3b-b1fe-8a32fd2068d7"/><con:assertion type="Simple Contains" name="Contains resultcode OK" id="102d8e1e-4a71-4efa-a464-dfb8699d9c58"><con:configuration><token>resultCode>OK&lt;/ns</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" name="FindAllAnswers" id="55733494-be29-455e-8ef8-f239e42fe273"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>FindAllAnswersResponderBinding</con:interface><con:operation>FindAllAnswers</con:operation><con:request name="FindAllAnswers" id="602cdc11-7a96-40d5-88c0-1766d721432e"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://${#Project#END_POINT_PR}FindAllAnswers${#Project#VERSION_POST}</con:endpoint><con:request><![CDATA[<?xml version='1.0' encoding='UTF-8'?>
 <s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
 	<s:Header>
 		<h:To xmlns:h="http://www.w3.org/2005/08/addressing" xmlns="http://www.w3.org/2005/08/addressing"
-			xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">5565594230</h:To>
+			xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">${#Project#CARE_UNIT}</h:To>
 	</s:Header>
 	<s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 		xmlns:xsd="http://www.w3.org/2001/XMLSchema">
 		<FindAllAnswers
 			xmlns="urn:riv:insuranceprocess:healthreporting:FindAllAnswersResponder:1">
 
-			<careUnitId root="Test" extension="${#TestSuite#CARE_UNIT}"/>
+			<careUnitId root="${#Project#CARE_UNIT}" extension="${#Project#CARE_UNIT}"/>
 		</FindAllAnswers>
 	</s:Body>
-</s:Envelope>]]></con:request><con:assertion type="SOAP Response" id="a3c0fa8c-eb2c-4744-b3da-4ba782569d44"/><con:assertion type="Simple Contains" name="Contains resultcode OK" id="c52167ec-a4a6-4f6a-9fae-5dd579d4d373"><con:configuration><token>resultCode>OK&lt;/ns</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Simple Contains" name="Contains answersleft = 0" id="9732b177-0bed-4528-a992-1d656ff025cf"><con:configuration><token>&lt;answersLeft>0&lt;/answersLeft></token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="transfer" name="FoundIdToDelete" id="9d2dbe91-8df1-4586-8e38-f8fbed302a2b"><con:settings/><con:config xsi:type="con:PropertyTransfersStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false"><con:name>id</con:name><con:sourceType>Response</con:sourceType><con:sourceStep>FindAllAnswers</con:sourceStep><con:sourcePath>/*:Envelope/*:Body/*:FindAllAnswersResponse/*:answers/*:answer/*:id</con:sourcePath><con:targetType>Request</con:targetType><con:targetStep>DeleteAnswers - Careunit - CAREUNIT-TEST1234</con:targetStep><con:targetPath>/*:Envelope/*:Body/*:DeleteAnswers/*:AnswerId</con:targetPath><con:upgraded>true</con:upgraded></con:transfers></con:config></con:testStep><con:testStep type="request" id="f175ddeb-336d-4944-97ba-52f602f17492" name="DeleteAnswers - Careunit - CAREUNIT-TEST1234"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>DeleteAnswersResponderBinding</con:interface><con:operation>DeleteAnswers</con:operation><con:request name="DeleteAnswers - Careunit - CAREUNIT-TEST1234" outgoingWss="" incomingWss="" timeout="" sslKeystore="" useWsAddressing="false" useWsReliableMessaging="false" wssPasswordType="" id="5625688f-b95c-4671-ac60-bdb4c62521a4"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://test.esb.ntjp.se/vp/DeleteAnswers/1/rivtabp20</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:add="http://www.w3.org/2005/08/addressing" xmlns:urn="urn:riv:insuranceprocess:healthreporting:DeleteAnswersResponder:1">
+</s:Envelope>]]></con:request><con:assertion type="SOAP Response" id="a3c0fa8c-eb2c-4744-b3da-4ba782569d44"/><con:assertion type="Simple Contains" name="Contains resultcode OK" id="c52167ec-a4a6-4f6a-9fae-5dd579d4d373"><con:configuration><token>resultCode>OK&lt;/ns</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Simple Contains" name="Contains answersleft = 0" id="9732b177-0bed-4528-a992-1d656ff025cf"><con:configuration><token>&lt;answersLeft>0&lt;/answersLeft></token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="transfer" name="FoundIdToDelete" id="9d2dbe91-8df1-4586-8e38-f8fbed302a2b"><con:settings/><con:config xsi:type="con:PropertyTransfersStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false"><con:name>id</con:name><con:sourceType>Response</con:sourceType><con:sourceStep>FindAllAnswers</con:sourceStep><con:sourcePath>/*:Envelope/*:Body/*:FindAllAnswersResponse/*:answers/*:answer/*:id</con:sourcePath><con:targetType>Request</con:targetType><con:targetStep>DeleteAnswers - Careunit - CAREUNIT-TEST1234</con:targetStep><con:targetPath>/*:Envelope/*:Body/*:DeleteAnswers/*:AnswerId</con:targetPath><con:upgraded>true</con:upgraded></con:transfers></con:config></con:testStep><con:testStep type="request" id="f175ddeb-336d-4944-97ba-52f602f17492" name="DeleteAnswers - Careunit - CAREUNIT-TEST1234"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>DeleteAnswersResponderBinding</con:interface><con:operation>DeleteAnswers</con:operation><con:request name="DeleteAnswers - Careunit - CAREUNIT-TEST1234" outgoingWss="" incomingWss="" timeout="" sslKeystore="" useWsAddressing="false" useWsReliableMessaging="false" wssPasswordType="" id="5625688f-b95c-4671-ac60-bdb4c62521a4"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://${#Project#END_POINT_PR}DeleteAnswers${#Project#VERSION_POST}</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:add="http://www.w3.org/2005/08/addressing" xmlns:urn="urn:riv:insuranceprocess:healthreporting:DeleteAnswersResponder:1">
    <soapenv:Header>
-      <add:To>${#TestSuite#CARE_UNIT}</add:To>
+      <add:To>${#Project#CARE_UNIT}</add:To>
    </soapenv:Header>
    <soapenv:Body>
       <urn:DeleteAnswers>
-         <urn:careUnitId root="1.2.752.129.2.1.4.1" extension="${#TestSuite#CARE_UNIT}"/>
+         <urn:careUnitId root="1.2.752.129.2.1.4.1" extension="${#Project#CARE_UNIT}"/>
          <!--
          <urn:careGiverId validTimeLow="?" validTimeHigh="?" controlActRoot="?" controlActExtension="?" nullFlavor="?" flavorId="?" updateMode="?" root="?" extension="?" identifierName="?"/>
          -->
-         <urn:AnswerId>2</urn:AnswerId>
+         <urn:AnswerId>16</urn:AnswerId>
 
         
       </urn:DeleteAnswers>
    </soapenv:Body>
-</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="9ce75395-ec08-428e-b0c2-13cc868f4436" name="SOAP Response"/><con:credentials><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:riv:insuranceprocess:healthreporting:DeleteAnswersResponder:1"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:loadTest id="727b2d37-676f-48e3-9fc8-817a9df1423d" name="LoadTest"><con:settings><con:setting id="HttpSettings@close-connections">false</con:setting></con:settings><con:threadCount>1</con:threadCount><con:startDelay>0</con:startDelay><con:sampleInterval>250</con:sampleInterval><con:calculateTPSOnTimePassed>true</con:calculateTPSOnTimePassed><con:resetStatisticsOnThreadCountChange>true</con:resetStatisticsOnThreadCountChange><con:historyLimit>-1</con:historyLimit><con:testLimit>10</con:testLimit><con:limitType>TIME</con:limitType><con:loadStrategy><con:type>Simple</con:type><con:config><testDelay>10</testDelay><randomFactor>0.5</randomFactor></con:config></con:loadStrategy><con:assertion type="Step Status" name="Step Status"><con:configuration><name>Step Status</name><min-requests>0</min-requests><test-step>- Any -</test-step><max-errors>-1</max-errors></con:configuration></con:assertion><con:maxAssertionErrors>100</con:maxAssertionErrors><con:cancelExcessiveThreads>true</con:cancelExcessiveThreads><con:strategyInterval>500</con:strategyInterval></con:loadTest><con:properties/></con:testCase><con:properties><con:property><con:name>CARE_UNIT</con:name><con:value>Test</con:value></con:property></con:properties></con:testSuite><con:properties><con:property><con:name>CARE_UNIT</con:name><con:value>hejsanHasse</con:value></con:property></con:properties><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/><con:sensitiveInformation/></con:soapui-project>
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="9ce75395-ec08-428e-b0c2-13cc868f4436" name="SOAP Response"/><con:credentials><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:riv:insuranceprocess:healthreporting:DeleteAnswersResponder:1"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:loadTest id="727b2d37-676f-48e3-9fc8-817a9df1423d" name="LoadTest"><con:settings><con:setting id="HttpSettings@close-connections">false</con:setting></con:settings><con:threadCount>1</con:threadCount><con:startDelay>0</con:startDelay><con:sampleInterval>250</con:sampleInterval><con:calculateTPSOnTimePassed>true</con:calculateTPSOnTimePassed><con:resetStatisticsOnThreadCountChange>true</con:resetStatisticsOnThreadCountChange><con:historyLimit>-1</con:historyLimit><con:testLimit>10</con:testLimit><con:limitType>TIME</con:limitType><con:loadStrategy><con:type>Thread</con:type><con:config><startThreadCount>1</startThreadCount><endThreadCount>10</endThreadCount></con:config></con:loadStrategy><con:assertion type="Step Status" name="Step Status"><con:configuration><name>Step Status</name><min-requests>0</min-requests><test-step>- Any -</test-step><max-errors>-1</max-errors></con:configuration></con:assertion><con:maxAssertionErrors>100</con:maxAssertionErrors><con:cancelExcessiveThreads>true</con:cancelExcessiveThreads><con:strategyInterval>500</con:strategyInterval></con:loadTest><con:properties/></con:testCase><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="ReceiveMedCertAnswerFromTwoUnit" searchProperties="true" id="f7f02b79-4d89-4d80-8ee1-ffe7e42fe072" disabled="true"><con:settings/><con:testStep type="request" name="ReceiveMedCertAnswer" id="65f3fbc5-1eeb-4e22-8343-e236f66eaf82"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>ReceiveMedicalCertificateAnswerResponderBinding</con:interface><con:operation>ReceiveMedicalCertificateAnswer</con:operation><con:request name="ReceiveMedCertAnswer" id="2232bc45-f926-46ca-b9f4-7ca2891b2ab6"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://${#Project#END_POINT_PR}ReceiveMedicalCertificateAnswer${#Project#VERSION_POST}</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:add="http://www.w3.org/2005/08/addressing" xmlns:urn="urn:riv:insuranceprocess:healthreporting:ReceiveMedicalCertificateAnswerResponder:1" xmlns:urn1="urn:riv:insuranceprocess:healthreporting:medcertqa:1" xmlns:urn2="urn:riv:insuranceprocess:healthreporting:2">
+   <soapenv:Header>
+      <add:To>${#TestCase#TEST_CASE_UNIT}</add:To>
+   </soapenv:Header>
+   <soapenv:Body>
+      <urn:ReceiveMedicalCertificateAnswer>
+         <urn:Answer>
+            <urn:vardReferens-id></urn:vardReferens-id>
+            <!--Optional:-->
+            <urn:fkReferens-id>1</urn:fkReferens-id>
+            <urn:amne>1</urn:amne>
+            <urn:fraga>
+               <urn1:meddelandeText>1</urn1:meddelandeText>
+               <urn1:signeringsTidpunkt>2011-06-30T13:02:11</urn1:signeringsTidpunkt>
+               <!--You may enter ANY elements at this point-->
+            </urn:fraga>
+            <urn:svar>
+               <urn1:meddelandeText>1</urn1:meddelandeText>
+               <urn1:signeringsTidpunkt>2011-06-30T13:02:11</urn1:signeringsTidpunkt>
+               <!--You may enter ANY elements at this point-->
+            </urn:svar>
+            <urn:avsantTidpunkt>2011-06-30T13:02:11</urn:avsantTidpunkt>
+            <!--Zero or more repetitions:-->
+            <urn:fkKontaktInfo>
+               <urn1:kontakt>1</urn1:kontakt>
+               <!--You may enter ANY elements at this point-->
+            </urn:fkKontaktInfo>
+            <urn:adressVard>
+               <urn1:hosPersonal>
+                  <urn2:personal-id validTimeLow="?" validTimeHigh="?" controlActRoot="?" controlActExtension="?" nullFlavor="?" flavorId="?" updateMode="?" root="?" extension="?" identifierName="?"/>
+                  <urn2:fullstandigtNamn>1</urn2:fullstandigtNamn>
+                  <!--Optional:-->
+                  <urn2:forskrivarkod>1</urn2:forskrivarkod>
+                  <urn2:enhet>
+                     <urn2:enhets-id validTimeLow="?" validTimeHigh="?" controlActRoot="?" controlActExtension="?" nullFlavor="?" flavorId="?" updateMode="?" root="?" extension="?" identifierName="?"/>
+                     <!--Optional:-->
+                     <urn2:arbetsplatskod validTimeLow="?" validTimeHigh="?" controlActRoot="?" controlActExtension="?" nullFlavor="?" flavorId="?" updateMode="?" root="?" extension="?" identifierName="?"/>
+                     <urn2:enhetsnamn>1</urn2:enhetsnamn>
+                     <!--Optional:-->
+                     <urn2:postadress>1</urn2:postadress>
+                     <!--Optional:-->
+                     <urn2:postnummer>1</urn2:postnummer>
+                     <!--Optional:-->
+                     <urn2:postort>1</urn2:postort>
+                     <!--Optional:-->
+                     <urn2:telefonnummer>1</urn2:telefonnummer>
+                     <!--Optional:-->
+                     <urn2:epost>1</urn2:epost>
+                     <!--Optional:-->
+                     <urn2:vardgivare>
+                        <urn2:vardgivare-id validTimeLow="?" validTimeHigh="?" controlActRoot="?" controlActExtension="?" nullFlavor="?" flavorId="?" updateMode="?" root="?" extension="?" identifierName="?"/>
+                        <urn2:vardgivarnamn>1</urn2:vardgivarnamn>
+                        <!--You may enter ANY elements at this point-->
+                     </urn2:vardgivare>
+                     <!--You may enter ANY elements at this point-->
+                  </urn2:enhet>
+                  <!--You may enter ANY elements at this point-->
+               </urn1:hosPersonal>
+               <!--You may enter ANY elements at this point-->
+            </urn:adressVard>
+            <urn:lakarutlatande>
+               <urn1:lakarutlatande-id>1</urn1:lakarutlatande-id>
+               <urn1:signeringsTidpunkt>2011-06-30T13:02:11</urn1:signeringsTidpunkt>
+               <urn1:patient>
+                  <urn2:person-id validTimeLow="?" validTimeHigh="?" controlActRoot="?" controlActExtension="?" nullFlavor="?" flavorId="?" updateMode="?" root="?" extension="?" identifierName="?"/>
+                  <urn2:fullstandigtNamn>1</urn2:fullstandigtNamn>
+                  <!--You may enter ANY elements at this point-->
+               </urn1:patient>
+               <!--You may enter ANY elements at this point-->
+            </urn:lakarutlatande>
+            <!--You may enter ANY elements at this point-->
+         </urn:Answer>
+         <!--You may enter ANY elements at this point-->
+      </urn:ReceiveMedicalCertificateAnswer>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="0f50b626-4099-4f3b-b1fe-8a32fd2068d7"/><con:assertion type="Simple Contains" name="Contains resultcode OK" id="102d8e1e-4a71-4efa-a464-dfb8699d9c58"><con:configuration><token>resultCode>OK&lt;/ns</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Response SLA Assertion" id="ca5a68a0-f681-48a7-b490-0fdd38cdca0e" name="Response SLA"><con:configuration><SLA>1000</SLA></con:configuration></con:assertion><con:credentials><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" name="FindAllAnswers" id="06fb1dcd-6e29-4dbf-80db-6f2406cbde32"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>FindAllAnswersResponderBinding</con:interface><con:operation>FindAllAnswers</con:operation><con:request name="FindAllAnswers" id="602cdc11-7a96-40d5-88c0-1766d721432e"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://${#Project#END_POINT_PR}FindAllAnswers${#Project#VERSION_POST}</con:endpoint><con:request><![CDATA[<?xml version='1.0' encoding='UTF-8'?>
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+	<s:Header>
+		<h:To xmlns:h="http://www.w3.org/2005/08/addressing" xmlns="http://www.w3.org/2005/08/addressing"
+			xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">${#TestCase#TEST_CASE_UNIT}</h:To>
+	</s:Header>
+	<s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+		<FindAllAnswers
+			xmlns="urn:riv:insuranceprocess:healthreporting:FindAllAnswersResponder:1">
+
+			<careUnitId root="${#TestCase#TEST_CASE_UNIT}" extension="${#TestCase#TEST_CASE_UNIT}"/>
+		</FindAllAnswers>
+	</s:Body>
+</s:Envelope>]]></con:request><con:assertion type="SOAP Response" id="a3c0fa8c-eb2c-4744-b3da-4ba782569d44"/><con:assertion type="Simple Contains" name="Contains resultcode OK" id="c52167ec-a4a6-4f6a-9fae-5dd579d4d373"><con:configuration><token>resultCode>OK&lt;/ns</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Simple Contains" name="Contains answersleft = 0" id="9732b177-0bed-4528-a992-1d656ff025cf"><con:configuration><token>&lt;answersLeft>0&lt;/answersLeft></token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Response SLA Assertion" id="c8bf61cf-164a-4d18-84b3-1b12dd0d1c9c" name="Response SLA"><con:configuration><SLA>500</SLA></con:configuration></con:assertion><con:credentials><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="groovy" name="TRansferAllId" id="a9341a6a-c686-41c8-8aee-f0ba8b3dc19d" disabled="true"><con:settings/><con:config><script>def groovyUtils = new com.eviware.soapui.support.GroovyUtils(context )
+def findAllAnswersResponse = groovyUtils.getXmlHolder( testRunner.testCase.testSteps["FindAllAnswers"].testRequest.response.responseContent );
+def responseIds = findAllAnswersResponse.getDomNodes( "/*:Envelope/*:Body/*:FindAllAnswersResponse/*:answers/*:answer/*:id" );
+
+
+def idvals = findAllAnswersResponse.getNodeValues( "/*:Envelope/*:Body/*:FindAllAnswersResponse/*:answers/*:answer/*:id" )
+
+def deleteAnswerReq = groovyUtils.getXmlHolder( "DeleteAnswers#Request");
+
+def answerIds = deleteAnswerReq.getDomNodes( "/*:Envelope/*:Body/*:DeleteAnswers/*:AnswerId" ); 
+
+def deleteAnswer = deleteAnswerReq.getDomNode( "/*:Envelope/*:Body/*:DeleteAnswers" ); 
+
+for( node in answerIds )
+{
+  node.removeXobj();
+}
+
+def deleteAnswerDoc = deleteAnswer.getOwnerDocument()
+
+for( node in idvals){
+
+     def xmlSLurp = new XmlParser(false,false);
+     def nodeToAdd = xmlSLurp.parseText('&lt;urn:AnswerId>' + node + '&lt;/urn:AnswerId>')
+     log.info nodeToAdd.rootnode
+    
+	def newAnswerId = deleteAnswerDoc.createElementNS("ns0","AnswerId")  
+	 deleteAnswer.appendChild(newAnswerId)
+	 //deleteAnswer.appendChild()
+	 
+	// newAnswerId.appendChild(deleteAnswerDoc.createTextNode(node))
+      
+}
+
+deleteAnswerReq.updateProperty();
+</script></con:config></con:testStep><con:testStep type="transfer" name="FoundIdToDelete" id="1184cbd3-857d-486a-8c50-73246c80d54a"><con:settings/><con:config xsi:type="con:PropertyTransfersStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false"><con:name>id</con:name><con:sourceType>Response</con:sourceType><con:sourceStep>FindAllAnswers</con:sourceStep><con:sourcePath>/*:Envelope/*:Body/*:FindAllAnswersResponse/*:answers/*:answer/*:id</con:sourcePath><con:targetType>Request</con:targetType><con:targetStep>DeleteAnswers</con:targetStep><con:targetPath>/*:Envelope/*:Body/*:DeleteAnswers/*:AnswerId</con:targetPath><con:upgraded>true</con:upgraded></con:transfers></con:config></con:testStep><con:testStep type="request" id="808076ae-59f9-4529-8459-f54dff5ede1a" name="DeleteAnswers"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>DeleteAnswersResponderBinding</con:interface><con:operation>DeleteAnswers</con:operation><con:request name="DeleteAnswers" outgoingWss="" incomingWss="" timeout="" sslKeystore="" useWsAddressing="false" useWsReliableMessaging="false" wssPasswordType="" id="5625688f-b95c-4671-ac60-bdb4c62521a4"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://${#Project#END_POINT_PR}DeleteAnswers${#Project#VERSION_POST}</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:add="http://www.w3.org/2005/08/addressing" xmlns:urn="urn:riv:insuranceprocess:healthreporting:DeleteAnswersResponder:1">
+   <soapenv:Header>
+      <add:To>${#TestCase#TEST_CASE_UNIT}</add:To>
+   </soapenv:Header>
+   <soapenv:Body>
+      <urn:DeleteAnswers>
+         <urn:careUnitId root="1.2.752.129.2.1.4.1" extension="${#TestCase#TEST_CASE_UNIT}"/>
+         <!--
+         <urn:careGiverId validTimeLow="?" validTimeHigh="?" controlActRoot="?" controlActExtension="?" nullFlavor="?" flavorId="?" updateMode="?" root="?" extension="?" identifierName="?"/>
+         -->
+     
+       <urn:AnswerId></urn:DeleteAnswers>ns0:AnswerId></urn:DeleteAnswers>  
+      </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="9ce75395-ec08-428e-b0c2-13cc868f4436" name="SOAP Response"/><con:assertion type="Response SLA Assertion" id="eb435119-f58a-4668-bde6-56c29c7e3ad3" name="Response SLA"><con:configuration><SLA>1000</SLA></con:configuration></con:assertion><con:credentials><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:riv:insuranceprocess:healthreporting:DeleteAnswersResponder:1"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:loadTest id="d23ddebc-355d-433d-bd4c-d53f6c187e5b" name="LoadTest"><con:settings><con:setting id="HttpSettings@close-connections">false</con:setting></con:settings><con:threadCount>2</con:threadCount><con:startDelay>0</con:startDelay><con:sampleInterval>250</con:sampleInterval><con:calculateTPSOnTimePassed>true</con:calculateTPSOnTimePassed><con:resetStatisticsOnThreadCountChange>true</con:resetStatisticsOnThreadCountChange><con:historyLimit>-1</con:historyLimit><con:testLimit>60</con:testLimit><con:limitType>TIME</con:limitType><con:loadStrategy><con:type>Thread</con:type><con:config><startThreadCount>2</startThreadCount><endThreadCount>2</endThreadCount></con:config></con:loadStrategy><con:assertion type="Step Status" name="Step Status"><con:configuration><name>Step Status</name><min-requests>0</min-requests><test-step>- Any -</test-step><max-errors>-1</max-errors></con:configuration></con:assertion><con:maxAssertionErrors>100</con:maxAssertionErrors><con:cancelExcessiveThreads>true</con:cancelExcessiveThreads><con:strategyInterval>500</con:strategyInterval></con:loadTest><con:setupScript>def isTest=false
+if(isTest){
+	if(context.ThreadIndex==0){
+		testRunner.testCase.setPropertyValue( "TEST_CASE_UNIT", "0123456777" );
+	}else{
+		testRunner.testCase.setPropertyValue( "TEST_CASE_UNIT", "Test" );
+	}	
+}else{//if is QA
+	if(context.ThreadIndex==0){
+		testRunner.testCase.setPropertyValue( "TEST_CASE_UNIT", "CASEBOX-QA" );
+	}else{
+		testRunner.testCase.setPropertyValue( "TEST_CASE_UNIT", "5565594230" );
+	}
+}
+</con:setupScript><con:properties><con:property><con:name>TEST_CASE_UNIT</con:name><con:value>CASEBOX-QA</con:value></con:property></con:properties></con:testCase><con:properties/></con:testSuite><con:endpointStrategy xsi:type="con:DefaultEndpointStrategy" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:endpoint mode="OVERRIDE">https://${#Project#END_POINT_PR}DeleteAnswers${#Project#VERSION_POST}</con:endpoint></con:endpointStrategy><con:properties><con:property><con:name>CARE_UNIT</con:name><con:value>0123456777</con:value></con:property><con:property><con:name>END_POINT_PR</con:name><con:value>qa.esb.ntjp.se/vp/</con:value></con:property><con:property><con:name>VERSION_POST</con:name><con:value>/1/rivtabp20</con:value></con:property><con:property><con:name>TODAYSDATE</con:name><con:value/></con:property></con:properties><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/><con:sensitiveInformation/></con:soapui-project>

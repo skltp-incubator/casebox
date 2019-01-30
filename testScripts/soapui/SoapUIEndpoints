@@ -1,0 +1,46 @@
+Instructions running SoapUI test thru VP on Test and or QA
+Use https://${#Project#END_POINT_PR}ReceiveMedicalCertificateQuestion${#Project#VERSION_POST} as endpoint for the requests
+
+The "logical addresses are known to work with certificate with serial SE5565594230-BCQ"
+eg:[Test: Test, 0123456777],[QA: 5565594230, CASEBOX-QA] these are known to exist and work: 2019-01-25 but things could
+of course change over time
+//////////////////test-environment/////////////////////
+Set params:
+Project.END_POINT_PR = test.esb.ntjp.se/vp/
+    For testCase: ReceiveMedCertQuestion
+        and Project.CARE_UNIT = Test
+        or Project.CARE_UNIT = 0123456777
+    For testCase: ReceiveMedCertQuestionsFromTwoUnits
+        make sure the first line of the setup script is set to:
+        def isTest=true
+        (Since the Test and QA have different configurations the "logical addresses are different" the script assigns
+        different logical addresses to
+    For testCase: AnswersFlow
+        and Project.CARE_UNIT = Test
+        or Project.CARE_UNIT = 0123456777
+
+
+
+for test against QA use same as above except:
+END_POINT_PR = qa.esb.ntjp.se/vp/
+and CARE_UNIT = 5565594230
+or CARE_UNIT = PCASEBOX-QA
+isTest=false
+
+read cursively:
+Note that load test currently only works with one thread
+and that ReceiveMedCertAnswerFromTwoUnit are disabled cause the transferallid step doesent work
+(i dont manage to get the namespace prefix to work, and since tests work with one thread we call it a day)
+
+This is because (when 2 threads is running)the saved item sometimes fail to show in the getAll step and
+then don't get deleted. When the thread starts over and a new item is saved two items are retrieved by
+getAll step, but the transfer-step can only handle one. Subsequently we get a soap assertion failure cause
+there is more items left after the delete call.
+
+The conclusion is that the premises of the test are wrong rather than the function. More specific there is
+nothing in the contract that says that a message should be available for fetching immediately after it's been
+saved. In production it's different entities leaving and fetching messages, and the fetching part should delete
+what ever messages it have fetched (currently the tests fail to do this)
+
+It can be noted that the response times do increase if load tests are run for more than a minute. However it's
+concluded that burst of that magnitude are not normally expected.
