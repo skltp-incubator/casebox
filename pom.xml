@@ -22,16 +22,6 @@
 	<version>1.1.2-SNAPSHOT</version>
 	<name>casebox-parent</name>
 
-	<properties>
-		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<cxf.version>3.1.0</cxf.version>
-		<commons-collection.version>3.2.2</commons-collection.version>
-		<spring-version>4.3.20.RELEASE</spring-version>
-		<junit-version>4.13.1</junit-version>
-		<spring-security-version>5.4.1</spring-security-version>
-		<hibernate-version>3.5.6-Final</hibernate-version>
-	</properties>
-
 	<scm>
 		<url>https://github.com/skltp-incubator/casebox.git</url>
 		<connection>scm:git:https://github.com:443/skltp-incubator/casebox.git</connection>
@@ -47,6 +37,58 @@
 		<module>composites/casebox-ws-test-consumer</module>
 		<module>modules/web</module>
 	</modules>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<maven.compiler.target>1.8</maven.compiler.target>
+		<maven.compiler.source>1.8</maven.compiler.source>
+
+		<cxf.version>3.4.1</cxf.version>
+		<!--		<cxf.version>3.1.0</cxf.version>-->
+
+		<commons-collection.version>3.2.2</commons-collection.version>
+
+		<spring-version>4.3.29.RELEASE</spring-version>
+		<!--		<spring-version>4.3.20.RELEASE</spring-version>-->
+
+		<spring-security-version>4.2.19.RELEASE</spring-security-version>
+		<!--		<spring-security-version>4.2.9.RELEASE</spring-security-version>-->
+
+		<hibernate.version>3.6.10.Final</hibernate.version>
+<!--				<hibernate.version>3.5.6-Final</hibernate.version>-->
+
+<!--		<hibernate-validator.version>6.1.6.Final</hibernate-validator.version>-->
+				<hibernate-validator.version>4.2.0.Final</hibernate-validator.version>
+
+		<mysql-connector.version>8.0.22</mysql-connector.version>
+<!--				<mysql-connector.version>5.1.47</mysql-connector.version>-->
+
+		<spring-webflow-js.version>2.4.8.RELEASE</spring-webflow-js.version>
+<!--		<spring-webflow-js.version>2.0.5.RELEASE</spring-webflow-js.version>-->
+
+		<cglib.version>3.3.0</cglib.version>
+<!--		<cglib.version>2.2</cglib.version>-->
+
+		<apache-velocity.version>2.2</apache-velocity.version>
+<!--		<apache-velocity.version>1.6.4</apache-velocity.version>-->
+
+		<vgregion-daoframework.version>3.2</vgregion-daoframework.version>
+
+		<log4j.version>2.12.1</log4j.version>
+		<slf4j.version>1.7.30</slf4j.version>
+
+		<!-- TEST DEPENDENCIES-->
+		<junit-version>4.13.1</junit-version>
+		<dbunit.version>2.7.0</dbunit.version>
+		<xmlunit.version>2.8.1</xmlunit.version>
+
+<!--		<easymock.version>4.2</easymock.version>-->
+		<easymock.version>3.0</easymock.version>
+
+		<hsqldb.version>1.8.0.7</hsqldb.version>
+<!--		<hsqldb.version>2.5.1</hsqldb.version>-->
+
+	</properties>
 
 	<distributionManagement>
 		<repository>
@@ -64,12 +106,13 @@
 
 	<dependencyManagement>
 		<dependencies>
-			<!-- Override commons-collections version 3.2.1 -->
+			<!-- Override commons-collections -->
 			<dependency>
 				<groupId>commons-collections</groupId>
 				<artifactId>commons-collections</artifactId>
 				<version>${commons-collection.version}</version>
 			</dependency>
+
 			<dependency>
 				<groupId>org.apache.cxf</groupId>
 				<artifactId>cxf-rt-frontend-jaxws</artifactId>
@@ -87,7 +130,7 @@
 				<artifactId>cxf-rt-transports-http</artifactId>
 				<version>${cxf.version}</version>
 			</dependency>
-									
+
 			<!--  för att undvika att 2.0.8 laddas in -->
 			<dependency>
 				<groupId>org.springframework</groupId>
@@ -141,30 +184,41 @@
         <artifactId>spring-context-support</artifactId>
         <version>${spring-version}</version>
       </dependency>
+			<dependency>
+				<groupId>org.springframework</groupId>
+				<artifactId>spring-jdbc</artifactId>
+				<version>${spring-version}</version>
+			</dependency>
 
       <dependency>
 				<groupId>org.springframework.webflow</groupId>
-				<artifactId>org.springframework.js</artifactId>
-				<version>2.0.5.RELEASE</version>
+				<artifactId>spring-js</artifactId>
+				<version>${spring-webflow-js.version}</version>
 			</dependency>
 
 
+<!--			<dependency>-->
+<!--				<groupId>org.apache.velocity</groupId>-->
+<!--				<artifactId>velocity</artifactId>-->
+<!--				<version>1.6.4</version>-->
+<!--			</dependency>-->
+
 			<dependency>
 				<groupId>org.apache.velocity</groupId>
-				<artifactId>velocity</artifactId>
-				<version>1.6.4</version>
+				<artifactId>velocity-engine-core</artifactId>
+				<version>${apache-velocity.version}</version>
 			</dependency>
 
 			<dependency>
 				<groupId>se.vgregion.daoframework</groupId>
 				<artifactId>dao-framework-jpa</artifactId>
-				<version>3.2</version>
+				<version>${vgregion-daoframework.version}</version>
 			</dependency>
 
 			<dependency>
 				<groupId>se.vgregion.daoframework</groupId>
 				<artifactId>dao-framework</artifactId>
-				<version>3.2</version>
+				<version>${vgregion-daoframework.version}</version>
 			</dependency>
 
 			<dependency>
@@ -176,41 +230,33 @@
 			<dependency>
 				<groupId>org.hibernate</groupId>
 				<artifactId>hibernate-entitymanager</artifactId>
-				<version>${hibernate-version}</version>
+				<version>${hibernate.version}</version>
 			</dependency>
 
 			<dependency>
 				<groupId>org.hibernate</groupId>
 				<artifactId>hibernate-core</artifactId>
-				<version>${hibernate-version}</version>
+				<version>${hibernate.version}</version>
 			</dependency>
-
-
 
 			<dependency>
 				<groupId>org.hibernate</groupId>
 				<artifactId>hibernate-validator</artifactId>
-				<!--version>${hibernate-version}</version-->
-				<version>4.2.0.Final</version>
+				<version>${hibernate-validator.version}</version>
 			</dependency>
 
 			<dependency>
 				<groupId>cglib</groupId>
 				<artifactId>cglib</artifactId>
-				<version>2.2</version>
+				<version>${cglib.version}</version>
 			</dependency>
 
-			<dependency>
-				<groupId>hsqldb</groupId>
-				<artifactId>hsqldb</artifactId>
-				<version>1.8.0.7</version>
-			</dependency>
+
 
 			<dependency>
 				<groupId>mysql</groupId>
 				<artifactId>mysql-connector-java</artifactId>
-				<!--version>6.0.6</version-->
-				<version>5.1.47</version>
+				<version>${mysql-connector.version}</version>
 			</dependency>
 
 			<dependency>
@@ -228,28 +274,57 @@
 				<artifactId>log4j</artifactId>
 				<version>1.2.16</version>
 			</dependency>
+
+<!--			<dependency>-->
+<!--				<groupId>org.apache.logging.log4j</groupId>-->
+<!--				<artifactId>log4j-api</artifactId>-->
+<!--				<version>${log4j.version}</version>-->
+<!--			</dependency>-->
+<!--			<dependency>-->
+<!--				<groupId>org.apache.logging.log4j</groupId>-->
+<!--				<artifactId>log4j-core</artifactId>-->
+<!--				<version>${log4j.version}</version>-->
+<!--			</dependency>-->
+<!--			<dependency>-->
+<!--				<groupId>org.apache.logging.log4j</groupId>-->
+<!--				<artifactId>log4j-slf4j-impl</artifactId>-->
+<!--				<version>${log4j.version}</version>-->
+<!--			</dependency>-->
 			<dependency>
-				<groupId>junit</groupId>
+				<groupId>net.logstash.log4j</groupId>
+				<artifactId>jsonevent-layout</artifactId>
+				<version>1.7</version>
+			</dependency>
+
+			<!-- Test dependencies-->
+			<dependency>
+				<groupId>hsqldb</groupId>
+<!--				<groupId>org.hsqldb</groupId>-->
+				<artifactId>hsqldb</artifactId>
+				<version>${hsqldb.version}</version>
+			</dependency>
+			<dependency>
+			  <groupId>junit</groupId>
 				<artifactId>junit</artifactId>
 				<version>${junit-version}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.easymock</groupId>
 				<artifactId>easymock</artifactId>
-				<version>3.0</version>
+				<version>${easymock.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.dbunit</groupId>
 				<artifactId>dbunit</artifactId>
-				<version>2.4.8</version>
+				<version>${dbunit.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.xmlunit</groupId>
+				<artifactId>xmlunit-core</artifactId>
+				<version>${xmlunit.version}</version>
 			</dependency>
 
-			<dependency>
-				<groupId>xmlunit</groupId>
-				<artifactId>xmlunit</artifactId>
-				<version>1.1</version>
-			</dependency>
-			
+
 			<dependency>
 				<groupId>javax.validation</groupId>
 				<artifactId>validation-api</artifactId>
@@ -296,6 +371,7 @@
 					</exclusion>
 				</exclusions>
 			</dependency>
+
 			<dependency>
 				<groupId>com.google.guava</groupId>
 				<artifactId>guava</artifactId>
@@ -311,19 +387,19 @@
 			<dependency>
 				<groupId>commons-logging</groupId>
 				<artifactId>commons-logging</artifactId>
-				<version>1.1.1</version>
+				<version>1.2</version>
 			</dependency>
 
-			<dependency>
-				<groupId>commons-lang</groupId>
-				<artifactId>commons-lang</artifactId>
-				<version>2.5</version>
-			</dependency>
+<!--			<dependency>-->
+<!--				<groupId>commons-lang</groupId>-->
+<!--				<artifactId>commons-lang</artifactId>-->
+<!--				<version>2.5</version>-->
+<!--			</dependency>-->
 
 			<dependency>
 				<groupId>commons-io</groupId>
 				<artifactId>commons-io</artifactId>
-				<version>1.4</version>
+				<version>2.8.0</version>
 			</dependency>
 
 			<dependency>
@@ -345,20 +421,7 @@
 		</dependencies>
 	</dependencyManagement>
 
-<!--
-	<pluginRepositories>
-		<pluginRepository>
-			<id>jrebel</id>
-			<name>JRebel</name>
-			<url>http://repos.zeroturnaround.com/maven2</url>
-			<layout>default</layout>
-			<releases>
-				<enabled>true</enabled>
-			</releases>
-		</pluginRepository>
-	</pluginRepositories>
--->
-	
+
 	<build>
 		<pluginManagement>
 			<plugins>
@@ -369,24 +432,12 @@
 				</plugin>
 			</plugins>
 		</pluginManagement>
-		<plugins>
-			<plugin>
-				<artifactId>maven-compiler-plugin</artifactId>
-				<configuration>
-					<source>1.7</source>
-					<target>1.7</target>
-					<encoding>UTF-8</encoding>
-					<compilerArgs>
-						<arg>-Xlint:deprecation</arg>
-					</compilerArgs>
-				</configuration>
-				<version>3.3</version>
-			</plugin>
 
+		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-release-plugin</artifactId>
-				<version>2.5.1</version>
+				<version>2.5.3</version>
 				<configuration>
 					<autoVersionSubmodules>true</autoVersionSubmodules>
 					<tagNameFormat>v@{project.version}</tagNameFormat>
