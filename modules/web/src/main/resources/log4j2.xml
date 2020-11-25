@@ -1,0 +1,21 @@
+<Configuration status="WARN" monitorInterval="30">
+
+  <Appenders>
+    <Console name="Console" target="SYSTEM_OUT">
+      <JsonLayout complete="true" compact="false"  includeTimeMillis="true">
+        <KeyValuePair key="timestamp" value="$${date:yyyy-MM-dd'T'HH:mm:ss.SSSZ}" />
+      </JsonLayout>
+    </Console>
+  </Appenders>
+
+  <Loggers>
+    <Logger name="org.springframework" level="INFO"/>
+    <Logger name="org.springframework.transaction" level="ALL"/>
+    <Logger name="org.hibernate" level="INFO"/>
+
+    <Root level="DEBUG">
+      <AppenderRef ref="Console"/>
+    </Root>
+
+  </Loggers>
+</Configuration>

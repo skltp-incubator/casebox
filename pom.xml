@@ -74,8 +74,8 @@
 
 		<vgregion-daoframework.version>3.2</vgregion-daoframework.version>
 
-		<log4j.version>2.12.1</log4j.version>
-		<slf4j.version>1.7.30</slf4j.version>
+		<log4j.version>2.14.0</log4j.version>
+<!--		<slf4j.version>1.7.30</slf4j.version>-->
 
 		<!-- TEST DEPENDENCIES-->
 		<junit-version>4.13.1</junit-version>
@@ -87,6 +87,8 @@
 
 		<hsqldb.version>1.8.0.7</hsqldb.version>
 <!--		<hsqldb.version>2.5.1</hsqldb.version>-->
+
+		<jackson.version>2.11.3</jackson.version>
 
 	</properties>
 
@@ -260,40 +262,24 @@
 			</dependency>
 
 			<dependency>
-				<groupId>org.slf4j</groupId>
-				<artifactId>slf4j-api</artifactId>
-				<version>1.6.1</version>
+				<groupId>org.apache.logging.log4j</groupId>
+				<artifactId>log4j-api</artifactId>
+				<version>${log4j.version}</version>
 			</dependency>
 			<dependency>
-				<groupId>org.slf4j</groupId>
-				<artifactId>slf4j-log4j12</artifactId>
-				<version>1.6.1</version>
+				<groupId>org.apache.logging.log4j</groupId>
+				<artifactId>log4j-core</artifactId>
+				<version>${log4j.version}</version>
 			</dependency>
 			<dependency>
-				<groupId>log4j</groupId>
-				<artifactId>log4j</artifactId>
-				<version>1.2.16</version>
+				<groupId>org.apache.logging.log4j</groupId>
+				<artifactId>log4j-slf4j-impl</artifactId>
+				<version>${log4j.version}</version>
 			</dependency>
-
-<!--			<dependency>-->
-<!--				<groupId>org.apache.logging.log4j</groupId>-->
-<!--				<artifactId>log4j-api</artifactId>-->
-<!--				<version>${log4j.version}</version>-->
-<!--			</dependency>-->
-<!--			<dependency>-->
-<!--				<groupId>org.apache.logging.log4j</groupId>-->
-<!--				<artifactId>log4j-core</artifactId>-->
-<!--				<version>${log4j.version}</version>-->
-<!--			</dependency>-->
-<!--			<dependency>-->
-<!--				<groupId>org.apache.logging.log4j</groupId>-->
-<!--				<artifactId>log4j-slf4j-impl</artifactId>-->
-<!--				<version>${log4j.version}</version>-->
-<!--			</dependency>-->
 			<dependency>
-				<groupId>net.logstash.log4j</groupId>
-				<artifactId>jsonevent-layout</artifactId>
-				<version>1.7</version>
+				<groupId>com.fasterxml.jackson.core</groupId>
+				<artifactId>jackson-databind</artifactId>
+				<version>${jackson.version}</version>
 			</dependency>
 
 			<!-- Test dependencies-->
