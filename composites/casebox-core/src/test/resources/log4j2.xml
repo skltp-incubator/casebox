@@ -2,34 +2,19 @@
 
   <Appenders>
     <Console name="Console" target="SYSTEM_OUT">
-      <JsonLayout complete="true" compact="false"  includeTimeMillis="true">
-        <KeyValuePair key="timestamp" value="$${date:yyyy-MM-dd'T'HH:mm:ss.SSSZ}" />
-      </JsonLayout>
+      <JsonTemplateLayout eventTemplateUri="classpath:LogstashJsonEventLayoutV1.json"/>
     </Console>
-
-    <RollingRandomAccessFile name="RollingRandomAccessFile"
-      fileName="c:/tmp/casebox/casebox.log"
-      filePattern="c:/tmp/casebox/casebox/casebox.log.%i">
-      <JsonLayout complete="true" compact="false"  includeTimeMillis="true">
-        <KeyValuePair key="timestamp" value="$${date:yyyy-MM-dd'T'HH:mm:ss.SSSZ}" />
-      </JsonLayout>
-      <Policies>
-        <SizeBasedTriggeringPolicy size="50 MB"/>
-      </Policies>
-      <DefaultRolloverStrategy fileIndex="min" max="10"/>
-    </RollingRandomAccessFile>
-
   </Appenders>
 
   <Loggers>
     <Logger name="org.springframework" level="INFO"/>
-    <Logger name="org.springframework.transaction" level="ALL"/>
+    <Logger name="org.springframework.transaction" level="INFO"/>
     <Logger name="org.hibernate" level="INFO"/>
+    <Logger name="se.inera" level="DEBUG"/>
 
-    <Root level="DEBUG">
+    <Root level="INFO">
       <AppenderRef ref="Console"/>
-      <AppenderRef ref="RollingRandomAccessFile"/>
     </Root>
-
   </Loggers>
+
 </Configuration>
