@@ -47,7 +47,7 @@
 		<commons-collection.version>3.2.2</commons-collection.version>
 
 		<spring-version>4.3.29.RELEASE</spring-version>
-		<spring-security-version>4.2.19.RELEASE</spring-security-version>
+		<spring-security-version>5.2.10.RELEASE</spring-security-version>
 
 		<hibernate.version>3.6.10.Final</hibernate.version>
 		<hibernate-validator.version>4.2.0.Final</hibernate-validator.version>
